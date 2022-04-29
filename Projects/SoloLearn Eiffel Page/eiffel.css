@@ -1,0 +1,77 @@
+body {
+    background-color: #e0e0e0;
+}
+h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 10px 0px 10px 0px;
+}
+b {
+    color: #2493df;
+}
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+section {
+    padding: 10px;
+    background-color: white;
+}
+th {
+    background-color: #2493df;
+    color: white;
+}
+td, th {
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 10px;
+}
+/* background-color is not applying to the padding
+this inherits from it's parent */
+#buy {
+    background-color: #687373;
+    margin-top: 10px;
+    color: #fcfcfc;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type="number"] {
+    padding: 2px;
+    text-align: center;
+    width: 50px;   
+}
+#buybutton {
+    background-color: #2493df;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
+    height: 40px;
+    width: 40%;
+}
+li {
+    list-style: square inside none;
+    padding-left: 30px;
+}
+footer {
+    color: #595959;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+form {
+    display: flex;
+}
+.form-section {
+    flex: 1;
+}
+img {
+    float: left;
+    margin-right: 10px;
+}
+/* the table should have a black border
+the buy form should display the label above the fields
+and the buy button should be smaller. */
