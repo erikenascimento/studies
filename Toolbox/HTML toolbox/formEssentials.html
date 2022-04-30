@@ -1,18 +1,55 @@
 <!-- example of an HTML form with common input types -->
 <form>
-    <h2>Personal Info</h2>
+
+    <h2>Personal Info:</h2>
+
+    <!-- the name attribute is relevant for the database and js-->
+    <!-- use <label for="" refering to the id of the input-->
     <label for="name">Full Name: </label>
     <input type="text" id="name" placeholder="John Doe"><br><br>
-    <label for="email">Email Addres: </label>
-    <input type="email" id="email" placeholder="johndoe@mail.com"><br><br>
+
     <label for="type">Gender: </label>
     <select id="type">
       <option>--</option>
       <option>Male</option>
       <option>Female</option>
-    </select><br><br> 
+    </select><br><br>
+
+    <label for="profilepic">Profile picture</label>
+    <input type="file" id="profilepic" accept="image/*"><br><br>
+    <!--  the accept attribute defines the file type-->
+    
+    <label for="brithdate">Birthdate:</label>
+    <input type="date" id="birthdate">
+
+    <h2>Contact:</h2>
+
+    <label for="email">Email Addres: </label>
+    <input type="email" id="email" placeholder="johndoe@mail.com"><br><br>
+
+    <label for="telephone">Telephone: </label>
+    <input type="tel" id="telephone" placeholder="9876-5432"><br><br>
+
+    <h2>Other:</h2>
+
+    <p>Do you like to click checkboxes?</p>
+    <label for="checkbox">Yes</label>
+    <input type="checkbox" id="checkbox"><br><br>
+
     <label for="message">Favourite Quote: </label><br>
-    <textarea placeholder="Not all who wander are lost. 
+    <textarea maxlength="280" rows="4" cols="70" placeholder="Not all who wander are lost. 
     -J. R. R. Tolkien"></textarea><br><br>
-    <input type="button" value="Send">
+    <!-- maxlength specifies the character limit of the textarea-->
+    <!-- rows and cols define the default size of the box
+    I've defined them like that because 70*4=280, the char limit-->
+
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd"><br><br>
+
+    <label for="slider">How much do you like sliders?</label>
+    <input type="range" id="slider" min="0" max="10"><br><br>
+    <!--  the min and max attributes can be defined to override the
+    0 to 100 default scale-->
+
+    <input type="button" value="Send"><br><br>
   </form>  
