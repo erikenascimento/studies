@@ -29,12 +29,25 @@ body {
   margin: 0 auto;
 }
 
-.main .main_paragraph {
+.main .main_paragraph1, .main .main_paragraph2 {
   font-weight: 700;
 }
 
-.main .main_paragraph:hover {
-  color: pink;
+.main .main_paragraph1:hover, .main .main_paragraph2:hover {
+  color: greenyellow;
+}
+
+.main .main_paragraph2:hover {
+  color: orange;
+}
+
+@media (max-width: 800px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .light {
