@@ -5,7 +5,7 @@ function countTrue(arr) {
 	return filtered.length;
 }
 
-countTrue([true, false, false, true, false]);
+console.log(countTrue([true, false, false, true, false]));
 
 /*
 Test Cases:
