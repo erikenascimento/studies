@@ -1,0 +1,47 @@
+<html>
+
+<head>
+</head>
+<body>
+    <div class="entrada" style="margin: 20px 0;">
+        <label for="input">Digite o texto</label>
+        <input type="text" id="inputAlvo">
+        <label for="input">Digite a expressao regular</label>
+        <input type="text" id="inputRegex">
+        <button id="botao">Filtrar</button>
+    </div>
+
+    <label for="resultado">Resultado:</label>
+    <textarea name="saida" id="saida" cols="30" rows="1"></textarea>
+    
+</body>
+
+<script>
+    const botao = document.querySelector("#botao");
+
+    botao.addEventListener("click", function() {
+        let inputAlvo = document.querySelector("#inputAlvo").value;
+        let inputRegex = document.querySelector("#inputRegex").value;
+        let saida = document.querySelector("#saida");
+
+        let expressao = new RegExp(inputRegex, 'g');
+        saida.value += expressao.exec(inputAlvo);
+
+        /* interface incompleta, tem de funcionar com um laço*/
+       
+    });
+
+     /* sem interface
+
+        var alvo = '11a22b33c';
+        var exp = /(\d\d)(\w)/g;
+        var resultado = null;
+        while (resultado = exp.exec(alvo)) {
+            console.log(resultado);
+            console.log(exp.lastIndex);
+        }
+
+    */
+</script>
+
+</html>
