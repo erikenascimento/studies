@@ -1,0 +1,39 @@
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    color: var(--branco-principal);
+    font-size: 48px;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 5rem 0;
+}
+
+.imagem__tv {
+    background-image: url(../imgs/tv.png);
+}
+
+.imagem__pc {
+    background-image: url(../imgs/computador.png);
+}
+
+.imagem__cel {
+    background-image: url(../imgs/celular.png);
+}
+
+.dispositivos__imagem {
+    background-position: center;
+    display: block;
+    height: 192px;
+    width: 339px;
+}
+
+.dispositivos__texto {
+    color: var(--branco-principal);
+    font-size: 32px;
+}

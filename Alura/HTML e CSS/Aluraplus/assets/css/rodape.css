@@ -1,0 +1,33 @@
+.rodape {
+    text-align: center;
+    margin: 0 4rem 8rem 4rem;
+}
+
+.rodape__logo {
+    background-image: url(../imgs/Logo.png);
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 10% 2rem 10%;
+}
+
+.lista__link > a {
+    color: var(--branco-principal);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.rodape__texto {
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.rodape__texto:first-of-type {
+    margin-bottom: 2rem;
+}

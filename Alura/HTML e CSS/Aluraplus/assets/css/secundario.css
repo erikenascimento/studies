@@ -1,0 +1,37 @@
+.secundario {
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.secundario__imagem {
+    background-image: url(../imgs/Plataformas.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: content-box;
+    height: 100%;
+    width: 80%;
+}
+
+.imagem__telas {
+    background-image: url(../imgs/Telas.png);
+}
+
+.imagem__notebook {
+    background-image: url(../imgs/Notebook.png);
+}
+
+.secundario__descricao {
+    padding: 2rem;
+}
+
+.secundario__titulo {
+    color: var(--branco-principal);
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0.1rem;
+}
+
+.secundario__texto {
+    color: var(--cinza-secundario);
+}
