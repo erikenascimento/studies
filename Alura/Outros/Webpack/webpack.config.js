@@ -1,6 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: "./app/src/js/app.js", //localização do arquivo a ser copiado
@@ -13,7 +13,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader"], //carrega o loader do mini-css-extract-plugin
       },
     ],
   },
@@ -23,5 +23,8 @@ module.exports = {
       filename: "app.html",
       hash: true, //utilizado para identificar a bundle guardada em cache com uma hash
     }),
+    new MiniCssExtractPlugin({
+      filename: 'style.css'
+    }), //disponibiliza o plugin e o renomeia como style.css ao invés do padrão main.css
   ],
 };
