@@ -2,7 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerWebpackPlugin = require("css-minimizer-webpack-plugin");
-const Webpack = require('webpack') //importando o webpack para poder usar o plugin ModuleConcatenation
+const Webpack = require("webpack"); //importando o webpack para poder usar o plugin ModuleConcatenation
 
 module.exports = {
   entry: "./app/src/js/app.js", //localização do arquivo a ser copiado
@@ -26,13 +26,17 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./app/src/app.html",
-      filename: "app.html",
+      template: "./app/src/index.html",
+      filename: "index.html",
       hash: true, //utilizado para identificar a bundle guardada em cache com uma hash
     }),
     new MiniCssExtractPlugin({
       filename: "style.css",
     }), //disponibiliza o plugin e o renomeia como style.css ao invés do padrão main.css
-    new Webpack.optimize.ModuleConcatenationPlugin()
+    new Webpack.optimize.ModuleConcatenationPlugin(),
   ],
+  devServer: {
+    contentBase: path.resolve(__dirname, "dist"),
+    port: 3000,
+  },
 };
