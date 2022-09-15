@@ -9,14 +9,19 @@ module.exports = {
     path: path.resolve(__dirname, "app/dist"), //caminho de destino da copia (dinâmico)
     clean: true, //limpa a pasta especificada dos arquivos da build antiga
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ["css-loader"],
+      },
+    ],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./app/src/app.html",
       filename: "app.html",
       hash: true, //utilizado para identificar a bundle guardada em cache com uma hash
-    }),
-    new CopyWebpackPlugin({
-      patterns: [{ from: "./app/src/css", to: "css" }], //to se refere ao nome do diretório criado apartir da origem from
     }),
   ],
 };
