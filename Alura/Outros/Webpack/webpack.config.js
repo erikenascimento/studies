@@ -18,9 +18,10 @@ module.exports = {
       },
     ],
   },
-  optimization: { //é aqui que o minimizer de css será configurado e não em plugins
+  optimization: {
+    //é aqui que o minimizer de css será configurado e não em plugins
     minimize: true,
-    minimizer: [new CssMinimizerWebpackPlugin()], //indica qual o minimizer a ser utilizado
+    minimizer: [new CssMinimizerWebpackPlugin(), "..."], //indica qual o minimizer a ser utilizado "..." garante que o webpack continue minimizando outros arquivos como por padrão
   },
   plugins: [
     new HtmlWebpackPlugin({
