@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerWebpackPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
   entry: "./app/src/js/app.js", //localização do arquivo a ser copiado
@@ -17,6 +18,10 @@ module.exports = {
       },
     ],
   },
+  optimization: { //é aqui que o minimizer de css será configurado e não em plugins
+    minimize: true,
+    minimizer: [new CssMinimizerWebpackPlugin()], //indica qual o minimizer a ser utilizado
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./app/src/app.html",
@@ -24,7 +29,7 @@ module.exports = {
       hash: true, //utilizado para identificar a bundle guardada em cache com uma hash
     }),
     new MiniCssExtractPlugin({
-      filename: 'style.css'
+      filename: "style.css",
     }), //disponibiliza o plugin e o renomeia como style.css ao invés do padrão main.css
   ],
 };
