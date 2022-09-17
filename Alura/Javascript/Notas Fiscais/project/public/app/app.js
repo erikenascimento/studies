@@ -7,6 +7,7 @@ import {
 	partialize,
 	pipe,
 } from "./utils/operators.js";
+import { EventEmitter } from "./utils/event-emitter.js";
 
 const operations = pipe(
 	partialize(takeUntil, 3),
@@ -15,8 +16,10 @@ const operations = pipe(
 
 const action = operations(() =>
 	retry(3, 3000, () => timeoutPromise(200, notasService.sumItems("2143")))
-		.then(console.log)
+		.then(total => EventEmitter.emit("itensTotalizados", total))
 		.catch(console.log)
 );
 
 document.querySelector("#myButton").onclick = action;
+
+EventEmitter.on('itensTotalizados', console.log)
