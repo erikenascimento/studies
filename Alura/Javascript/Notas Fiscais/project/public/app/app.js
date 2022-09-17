@@ -1,12 +1,20 @@
 import { log } from "./utils/promise-helpers.js";
 import "./utils/array-helpers.js";
 import { notasService } from "./nota/service.js";
-import { takeUntil, debounceTime } from "./utils/operators.js";
+import {
+	takeUntil,
+	debounceTime,
+	partialize,
+	pipe,
+} from "./utils/operators.js";
 
-const operationLimiter = takeUntil(3, () =>
+const operations = pipe(
+	partialize(takeUntil, 3),
+	partialize(debounceTime, 500)
+); //a ordem deve ser invertida mesmo usando pipe por causa de uma chamada de callback
+
+const action = operations(() =>
 	notasService.sumItems("2143").then(console.log).catch(console.log)
 );
 
-const operationTimeout = debounceTime(500, operationLimiter)
-
-document.querySelector("#myButton").onclick = operationTimeout;
+document.querySelector("#myButton").onclick = action;
