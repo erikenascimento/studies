@@ -1,0 +1,42 @@
+.clock {
+    border: 20px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+        inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 30rem;
+    margin: 50px auto;
+    padding: 2rem;
+    position: relative;
+    width: 30rem;
+}
+
+.clock__face {
+    height: 100%;
+    position: relative;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+    width: 100%;
+    }
+
+.clock__hand {
+    background: black;
+    height: 8px;
+    position: absolute;
+    transform-origin: 0%; /* change the rotation axis of the pointer */
+    transition: all 0.05s;
+    transition-timing-function: ease-in-out;
+    top: 50%;
+    width: 50%;
+}
+
+.clock__hand--min {
+    height: 5px;
+    width: 35%;
+}
+
+.clock__hand--sec {
+    background: red;
+    height: 2px;
+    right: 0px;
+    transform-origin: 30%;
+    width: 70%;
+}
