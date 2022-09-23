@@ -1,0 +1,35 @@
+.cabecalho {
+	display: flex;
+	height: 57px;
+	margin: 32px 0 22px 16px;
+	width: 100%;
+}
+
+.cabecalho__imagemPerfil {
+	background-image: url(./images/perfil-1.jpg);
+	background-position: center;
+	background-size: contain;
+	border-radius: 100%;
+	height: 57px;
+	width: 57px;
+}
+
+.cabecalho--textos {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 16px;
+}
+
+.cabecalho__boasVindas {
+	font-size: 22px;
+	font-weight: 700;
+	padding: 6.5px 0 6.5px 0;
+}
+
+.cabecalho__notificacao {
+	color: var(--cinzaSecundario);
+	font-size: 14px;
+	font-weight: 400;
+	padding: 4px 0 4px 0;
+}
