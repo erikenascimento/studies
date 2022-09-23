@@ -1,4 +1,119 @@
 .divisoriaDia {
 	font-weight: 700;
-	padding: 8px 0 8px 16px;
+	margin: 0.5rem 0 0.5rem 1rem;
+	padding: 5px 0 5px 0;
+}
+
+.listaConsultas {
+	background-color: white;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 1rem 1rem 1rem;
+	padding: 1rem;
+	width: 80%;
+}
+
+.listaConsultas--superior {
+	align-items: flex-start;
+	display: flex;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	padding-bottom: 1rem;
+}
+
+.listaConsultas__imagemPaciente {
+	background-size: contain;
+	border-radius: 100%;
+	height: 32px;
+	width: 32px;
+}
+
+.listaConsultas--textos {
+	margin-left: 16px;
+}
+
+.listaConsultas__nomePaciente {
+	font-size: 14px;
+	font-weight: 700;
+	padding: 4px 0 4px 0;
+}
+
+.listaConsultas__tipoConsulta {
+	color: var(--cinzaSecundario);
+	font-size: 12px;
+	font-weight: 400;
+	align-items: center;
+}
+
+.consulta--remota::before {
+	content: url(./images/Camera.png);
+}
+
+.consulta--local::before {
+	content: url(./images/pin.png);
+}
+
+.listaConsultas__balao {
+	align-self: flex-end;
+	background-image: url(./images/chat1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 32px;
+	width: 32px;
+}
+
+.listaConsultas--inferior {
+	display: flex;
+	flex-direction: column;
+	padding-top: 1rem;
+}
+
+.listaConsultas__horario {
+	font-size: 12px;
+	font-weight: 500;
+	padding: 3.5px 0 3.5px 0;
+	margin-bottom: 8px;
+}
+
+.listaConsultas__botoes {
+	display: flex;
+	justify-content: space-between;
+}
+
+.listaConsultas__botao {
+	font-family: "Montserrat";
+	border-radius: 8px;
+	border: none;
+	font-weight: 500;
+	font-size: 14px;
+	padding: 13px 16px 13px 16px;
+}
+
+.botao--video {
+	color: white;
+	background-color: var(--laranjaBotao);
+}
+
+.botao--audio {
+	background-color: white;
+	border: 1px solid #ececec;
+}
+
+.botao--endereco {
+	background-color: var(--azulDetalhe);
+}
+.imagem--LucianaDias {
+	background-image: url(./images/perfil-2.jpg);
+}
+
+.imagem--LarissaSantana {
+	background-image: url(./images/perfil-3.jpg);
+}
+
+.imagem--MarcosCorreia {
+	background-image: url(./images/perfil-4.jpg);
+}
+
+.imagem--ClaraLemos {
+	background-image: url(./images/perfil-5.jpg);
 }
