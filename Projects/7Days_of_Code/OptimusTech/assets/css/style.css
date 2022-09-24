@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+:root {
+	--pretoPrincipal: #101828;
+	--pretoSecundario: #3a404e;
+	--cinzaSecundario: #667085;
+	--cinzaRodape: #98a2b3;
+	--vermelhoDetalhe: #8e2424;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+}
+
+h1 h2 h3 h4 h5 {
+	color: var(--pretoPrincipal);
+}
+
+p {
+	color: var(--cinzaSecundario);
+}
+
+section {
+	width: 80%;
+}

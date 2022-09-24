@@ -1,0 +1,7 @@
+.navegacao__itens {
+	align-items: flex-start;
+	display: flex;
+	justify-content: space-between;
+	margin-right: 45%;
+	width: calc(60% - 40%);
+}

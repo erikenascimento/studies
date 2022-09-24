@@ -1,0 +1,17 @@
+.navegacao__logo {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	width: 9%;
+}
+
+.navegacao__logo__imagem {
+	background-image: url(../../images/worldwide1--traced.svg);
+	height: 27px;
+	width: 27px;
+}
+
+.navegacao__logo__marca {
+	color: var(--pretoSecundario);
+	font-size: 18px;
+}

@@ -1,0 +1,17 @@
+.navegacao__conta {
+	align-items: flex-end;
+	display: flex;
+	justify-content: space-between;
+	width: 12%;
+}
+
+.navegacao__conta__botao {
+	border-radius: 8px;
+	padding: 10px 18px;
+}
+
+/* Usando um seletor com maior especificidade para sobrescrever a cor do texto */
+.navegacao__conta > .botao--cadastrar {
+	color: white;
+	background-color: var(--vermelhoDetalhe);
+}
