@@ -1,0 +1,17 @@
+.perfil {
+	border-radius: 1rem;
+	display: flexbox;
+	flex-direction: column;
+	margin: 10vh 10vw; /* so pra visualizar melhor */
+	position: relative;
+	height: 468px;
+	width: 780px;
+}
+
+.perfil__banner {
+	background-image: url(../../images/imagem_de_capa.png);
+	background-repeat: no-repeat;
+	border-radius: 1rem 1rem 0 0;
+	height: 230px;
+	width: 100%;
+}

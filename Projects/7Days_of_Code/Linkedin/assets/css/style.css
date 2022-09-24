@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+	--pretoFundo: #000;
+	--cinzaCard: #1d2226;
+	--cinzaCard--ativo: hsla(0, 0%, 100%, 0.12);
+	--brancoTextoPrincipal: hsla(0, 0%, 100%, 0.9);
+	--cinzaTextoSecundario: hsla(0, 0%, 100%, 0.6);
+	--pretoTexto: hsla(0, 0%, 0%, 0.75);
+	--input: #38434f;
+	--primario: #70b5f9;
+	--positivo: #3ec786;
+}
+
+body {
+	background-color: var(--pretoFundo);
+	font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: var(--brancoTextoPrincipal);
+}
+
+p {
+	color: var(--cinzaTextoSecundario);
+}
+
+a {
+	color: var(--primario);
+	text-decoration: none;
+}
