@@ -12,4 +12,7 @@ body {
 	background: linear-gradient(165.96deg, #f8f4ff 0%, #eff0f4 100%);
 	color: var(--pretoTexto);
 	font-family: "Montserrat";
+	left: 8%;
+	position: relative;
+	right: 8%;
 }

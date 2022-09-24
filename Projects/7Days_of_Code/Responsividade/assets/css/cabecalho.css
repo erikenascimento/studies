@@ -6,7 +6,7 @@
 }
 
 .cabecalho__imagemPerfil {
-	background-image: url(./images/perfil-1.jpg);
+	background-image: url(../images/perfil-1.jpg);
 	background-position: center;
 	background-size: contain;
 	border-radius: 100%;

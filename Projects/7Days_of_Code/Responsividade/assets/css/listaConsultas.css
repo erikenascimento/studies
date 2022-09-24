@@ -46,16 +46,16 @@
 }
 
 .consulta--remota::before {
-	content: url(./images/Camera.png);
+	content: url(../images/Camera.png);
 }
 
 .consulta--local::before {
-	content: url(./images/pin.png);
+	content: url(../images/pin.png);
 }
 
 .listaConsultas__balao {
 	align-self: flex-end;
-	background-image: url(./images/chat1.png);
+	background-image: url(../images/chat1.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 32px;
@@ -103,17 +103,17 @@
 	background-color: var(--azulDetalhe);
 }
 .imagem--LucianaDias {
-	background-image: url(./images/perfil-2.jpg);
+	background-image: url(../images/perfil-2.jpg);
 }
 
 .imagem--LarissaSantana {
-	background-image: url(./images/perfil-3.jpg);
+	background-image: url(../images/perfil-3.jpg);
 }
 
 .imagem--MarcosCorreia {
-	background-image: url(./images/perfil-4.jpg);
+	background-image: url(../images/perfil-4.jpg);
 }
 
 .imagem--ClaraLemos {
-	background-image: url(./images/perfil-5.jpg);
+	background-image: url(../images/perfil-5.jpg);
 }
