@@ -8,12 +8,13 @@
 	--cinzaPlaceholder: #8a8a8a;
 	--vermelhoFavorito: #ba0707;
 	--roxoCheckbox: #706ea8;
+
+	font-size: 18px;
 }
 
 body {
 	background-color: var(--background);
 	font-family: "Kumbh Sans", sans-serif;
-	font-size: 18px;
 	color: white;
 }
 
