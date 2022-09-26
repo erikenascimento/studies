@@ -1,0 +1,74 @@
+.destaquePrincipal {
+	background-image: url(../images/background.jpg);
+	color: white;
+	height: 90vh;
+	width: 100vw;
+}
+
+.destaquePrincipal__pre {
+	align-items: center;
+	display: flex;
+}
+
+.destaquePrincipal__pre__logo {
+	background-image: url(../images/netflix-seeklogo.com.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 1.7rem;
+	width: 1.6rem;
+}
+
+.destaquePrincipal__pre__tipo {
+	font-weight: 600;
+	font-size: 1.2rem;
+	letter-spacing: 0.5rem;
+}
+
+.destaquePrincipal__conteudo {
+	position: relative;
+	top: 35%;
+	margin-left: 3%;
+	width: 30%;
+}
+
+.destaquePrincipal__conteudo__titulo {
+	font-size: 6.2rem;
+	font-weight: 900;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+}
+
+.destaquePrincipal__conteudo__descricao {
+	font-size: 1.3rem;
+	font-weight: 400;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+	margin-bottom: 2rem;
+}
+
+.destaquePrincipal__conteudo__botao {
+	border: 0px transparent;
+	border-radius: 0.25rem;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 0.8rem;
+}
+
+.destaquePrincipal__conteudo__botao--assistir::before {
+	content: "▶";
+	margin-right: 0.5rem;
+}
+
+.destaquePrincipal__conteudo__botao--assistir {
+	margin-right: 1rem;
+	width: 32%;
+}
+
+.destaquePrincipal__conteudo__botao--informacoes::before {
+	content: "ⓘ";
+	margin-right: 0.5rem;
+}
+
+.destaquePrincipal__conteudo__botao--informacoes {
+	background-color: rgba(109, 109, 110, 0.4);
+	color: white;
+	width: 47%;
+}
