@@ -11,6 +11,6 @@
 body {
 	background: linear-gradient(165.96deg, #f8f4ff 0%, #eff0f4 100%);
 	color: var(--pretoTexto);
-	font-family: "Montserrat";
+	font-family: "Montserrat", sans-serif;
 	margin: 10% 5vw;
 }
