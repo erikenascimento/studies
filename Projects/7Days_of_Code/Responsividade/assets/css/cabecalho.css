@@ -1,35 +1,36 @@
 .cabecalho {
 	display: flex;
 	height: 57px;
-	margin: 32px 0 22px 16px;
-	width: 100%;
+	margin-bottom: 2rem;
+	width: 90vw;
 }
 
 .cabecalho__imagemPerfil {
-	background-image: url(../images/perfil-1.jpg);
+	background-image: url(../images/perfil/perfil-1.jpg);
 	background-position: center;
-	background-size: contain;
+	background-size: cover;
+	background-repeat: no-repeat;
 	border-radius: 100%;
-	height: 57px;
-	width: 57px;
+	height: 3.75rem;
+	width: 3.75rem;
 }
 
 .cabecalho--textos {
 	display: flex;
 	flex-direction: column;
+	height: 80%;
 	justify-content: space-between;
-	margin-left: 16px;
+	margin: 0.6rem 0 0 1rem;
+	width: calc(90vw - 4.75rem);
 }
 
 .cabecalho__boasVindas {
 	font-size: 22px;
 	font-weight: 700;
-	padding: 6.5px 0 6.5px 0;
 }
 
 .cabecalho__notificacao {
 	color: var(--cinzaSecundario);
 	font-size: 14px;
 	font-weight: 400;
-	padding: 4px 0 4px 0;
 }
