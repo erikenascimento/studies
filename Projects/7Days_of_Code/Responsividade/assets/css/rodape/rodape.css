@@ -9,20 +9,6 @@
 	left: 0;
 }
 
-.rodape__botao {
-	background-color: var(--azulDetalhe);
-	border-radius: 100%;
-	box-shadow: 0px 4px 4px rgba(255, 152, 56, 0.06);
-	bottom: 10%;
-	color: white;
-	font-size: 3.5rem;
-	height: 3.5rem;
-	position: fixed;
-	right: 7.2vw;
-	text-align: center;
-	width: 3.5rem;
-}
-
 .rodape__itens {
 	text-align: center;
 	display: flex;
@@ -45,19 +31,19 @@
 }
 
 .rodape__itens__item__icone--consultas {
-	background-image: url(../images/icones/Calendarioicone.svg);
+	background-image: url(../../images/icones/Calendarioicone.svg);
 }
 
 .rodape__itens__item__icone--clientes {
-	background-image: url(../images/icones/clientes\ icone.svg);
+	background-image: url(../../images/icones/clientes\ icone.svg);
 }
 
 .rodape__itens__item__icone--relatorios {
-	background-image: url(../images/icones/relatorios\ icone.svg);
+	background-image: url(../../images/icones/relatorios\ icone.svg);
 }
 
 .rodape__itens__item__icone--menu {
-	background-image: url(../images/icones/menu\ icone.svg);
+	background-image: url(../../images/icones/menu\ icone.svg);
 }
 
 .rodape__itens__item__texto {

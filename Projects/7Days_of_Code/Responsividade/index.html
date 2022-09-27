@@ -9,7 +9,8 @@
 		<link rel="stylesheet" href="./assets/css/style.css" />
 		<link rel="stylesheet" href="./assets/css/cabecalho.css" />
 		<link rel="stylesheet" href="./assets/css/listaConsultas.css" />
-		<link rel="stylesheet" href="./assets/css/rodape.css" />
+		<link rel="stylesheet" href="./assets/css/rodape/rodape.css" />
+		<link rel="stylesheet" href="./assets/css/rodape/rodapeBotoes.css" />
 
 		<title>Consultas</title>
 	</head>
@@ -284,8 +285,23 @@
 			</div>
 		</section>
 
+		<span id="overlay"></span>
+		<div class="rodapeBotoes">
+			<span
+				class="rodapeBotoes__botao rodapeBotoes__botao--local botaoEscondido"
+				id="rodapeBotao--local"
+			></span>
+			<span
+				class="rodapeBotoes__botao rodapeBotoes__botao--remota botaoEscondido"
+				id="rodapeBotao--remota"
+			></span>
+			<span
+				class="rodapeBotoes__botao rodapeBotoes__botao--nova"
+				id="rodapeBotao--nova"
+			></span>
+		</div>
+
 		<footer class="rodape">
-			<span class="rodape__botao">+</span>
 			<nav class="rodape__itens">
 				<div class="rodape__itens__item">
 					<span
@@ -317,5 +333,7 @@
 				</div>
 			</nav>
 		</footer>
+
+		<script src="./assets/js/script.js"></script>
 	</body>
 </html>
