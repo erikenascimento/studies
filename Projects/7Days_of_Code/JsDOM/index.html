@@ -12,13 +12,15 @@
 			<label for="name">
 				Nome
 				<input
-					placeholder="Erik"
 					class="form-field js-field"
 					id="nome"
 					maxlength="120"
+					minlength="3"
 					name="name"
+					pattern="[a-zA-z]+"
 					required
 					type="text"
+					value="Erik"
 				/>
 			</label>
 			<label for="birth-date">
@@ -27,6 +29,7 @@
 					class="form-field js-field"
 					id="nascimento"
 					name="birth-date"
+					pattern="\d{1,2}/\d{1,2}[01-12]/\d{4})"
 					required
 					type="date"
 				/>
