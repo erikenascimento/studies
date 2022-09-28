@@ -1,0 +1,62 @@
+.navegacao {
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	display: flex;
+	height: 7%;
+	padding: 0 5vw;
+	justify-content: space-between;
+	width: 90vw;
+}
+
+.navegacao__logo {
+	background-image: url(../images/netflix-logo-png-1024x456.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 5vh;
+	width: 6vw;
+}
+
+.navegacao__links {
+	display: flex;
+	justify-content: space-between;
+	width: 20%;
+	margin-right: 65%;
+}
+
+.navegacao__links__item {
+	color: white;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.navegacao__acoes {
+	display: flex;
+	justify-content: space-between;
+	width: 6%;
+}
+
+.navegacao__acoes__pesquisa {
+	background-image: url(../images/lupa.svg);
+	background-position: 25%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: auto;
+	width: 1rem;
+}
+
+.navegacao__acoes__notificacoes {
+	background-image: url(../images/notificacoes.svg);
+	background-position: 25%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: auto;
+	width: 1rem;
+}
+
+.navegacao__acoes__perfil {
+	background-image: url(../images/profile.png);
+	background-size: contain;
+	height: 2rem;
+	width: 2rem;
+}
