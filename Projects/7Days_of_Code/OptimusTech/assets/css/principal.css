@@ -1,0 +1,25 @@
+.principal {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 12.5rem;
+	margin: 7% calc((100vw - 42vw) / 2);
+	width: 42vw;
+}
+
+.principal__span {
+	color: var(--vermelhoDetalhe);
+	font-weight: 600;
+}
+
+.principal__titulo {
+	font-size: 48px;
+	font-weight: 600;
+}
+
+.principal__texto {
+	font-size: 20px;
+	text-align: center;
+	line-height: 30px;
+}
