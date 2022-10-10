@@ -6,6 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<link rel="stylesheet" href="./assets/css/reset.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
 		<link rel="stylesheet" href="./assets/css/style.css" />
 
 		<title>AluraBooks</title>
@@ -86,5 +90,65 @@
 				placeholder="Qual será sua próxima leitura?"
 			/>
 		</section>
+
+		<section class="carrossel">
+			<h2 class="carrossel__titulo">Novos lançamentos</h2>
+			<!-- Slider main container -->
+			<div class="swiper">
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<img
+							src="./assets/imagens/livros/ApacheKafka.png"
+							alt="Livro sobre apache kafka e spring boot da alura books"
+						/>
+					</div>
+					<div class="swiper-slide">
+						<img
+							src="./assets/imagens/livros/Liderança.png"
+							alt="Livro sobre liderança em design da alura books"
+						/>
+					</div>
+					<div class="swiper-slide">
+						<img
+							src="./assets/imagens/livros/Javascript.png"
+							alt="Livro sobre javascript assertivo da alura books"
+						/>
+					</div>
+					<div class="swiper-slide">
+						<img
+							src="./assets/imagens/livros/Guia Front-end.png"
+							alt="Livro guia front end da alura books"
+						/>
+					</div>
+					<div class="swiper-slide">
+						<img
+							src="./assets/imagens/livros/Portugol.png"
+							alt="Livro sobre portugol da alura books"
+						/>
+					</div>
+					...
+				</div>
+
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</section>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script>
+			const swiper = new Swiper(".swiper", {
+				spaceBetween: 10,
+				slidesPerView: 3,
+				pagination: {
+					el: ".swiper-pagination",
+					type: "bullets",
+				},
+			});
+		</script>
 	</body>
 </html>

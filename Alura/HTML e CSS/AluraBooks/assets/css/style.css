@@ -2,6 +2,7 @@
 
 @import url(./cabecalho.css);
 @import url(./banner.css);
+@import url(./carrossel.css);
 
 :root {
 	--brancoBackground: #ebecee;
