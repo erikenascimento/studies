@@ -1,6 +1,6 @@
 .cabecalho {
 	align-items: center;
-	background-color: var(--brancoHeader);
+	background-color: var(--brancoPrincipal);
 	display: flex;
 	justify-content: space-between;
 	position: relative;
