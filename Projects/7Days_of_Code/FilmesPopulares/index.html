@@ -37,7 +37,22 @@
 			</div>
 		</section>
 
-		<script src="./app/models/cartaoFilme-model.js"></script>
+		<article class="cartaoFilme">
+			<span class="cartaoFilme__cartaz cartaoFilme__cartaz--endgame"></span>
+			<div class="cartaoFilme__info">
+				<h3 class="cartaoFilme__info__titulo">Avengers</h3>
+				<div class="cartaoFilme__info__nota">
+					<span class="cartaoFilme__info__nota__icone"></span>
+					<span class="cartaoFilme__info__nota__valor">9.5</span>
+				</div>
+				<div class="cartaoFilme__info__favoritar">
+					<span class="cartaoFilme__info__favoritar__icone"></span>
+					<span class="cartaoFilme__info__favoritar__texto">Favoritar</span>
+				</div>
+			</div>
+			<p class="cartaoFilme__descricao">${descricao}</p>
+		</article>
+
 		<script type="module" src="./app/views/cartaoFIlme-view.js"></script>
 	</body>
 </html>
