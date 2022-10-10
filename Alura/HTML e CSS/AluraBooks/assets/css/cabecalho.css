@@ -16,7 +16,7 @@
 }
 
 .cabecalho__esquerda__hamburguer {
-	background-image: url(../../imagens/icones/Menu.svg);
+	background-image: url(../imagens/icones/Menu.svg);
 	background-size: contain;
 	display: inline-block;
 	height: 24px;
