@@ -6,6 +6,7 @@
 @import url(./card.css);
 @import url(./topicos.css);
 @import url(./contato.css);
+@import url(./rodape.css);
 
 :root {
 	--brancoBackground: #ebecee;
@@ -22,4 +23,8 @@ body {
 	font-family: var(--fontePrincipal);
 	font-size: 16px;
 	font-weight: 400;
+}
+
+hr {
+	margin: 0;
 }
