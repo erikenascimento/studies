@@ -50,7 +50,7 @@
 }
 
 .cabecalho__esquerda__listaMenu__link {
-	background: var(--azulLink);
+	background: var(--azulDegrade);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
