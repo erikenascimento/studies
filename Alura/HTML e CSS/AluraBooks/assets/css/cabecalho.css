@@ -36,6 +36,7 @@
 }
 
 .cabecalho__esquerda__listaMenu {
+	background-color: white;
 	display: none;
 	position: absolute;
 	top: 100%;
@@ -101,5 +102,14 @@
 
 	.cabecalho__icone--favorito {
 		display: none;
+	}
+
+	.cabecalho__opcoes__botao {
+		display: none;
+	}
+
+	.cabecalho__opcoes__botao:checked ~ .cabecalho__esquerda__listaMenu {
+		display: block;
+		width: auto;
 	}
 }
