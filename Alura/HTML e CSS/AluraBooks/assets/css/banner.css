@@ -47,3 +47,16 @@
 		background-position: 5rem;
 	}
 }
+
+@media screen and (min-width: 1728px) {
+	.banner {
+		padding: 6rem;
+	}
+	.banner__pesquisa {
+		width: 35%;
+	}
+
+	.banner__pesquisa::placeholder {
+		background-position: 2rem 0;
+	}
+}
