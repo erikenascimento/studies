@@ -112,4 +112,35 @@
 		display: block;
 		width: auto;
 	}
+
+	.cabecalho__direita__compras__texto,
+	.cabecalho__direita__usuario__texto {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1728px) {
+	.cabecalho__direita__compras__texto,
+	.cabecalho__direita__usuario__texto {
+		display: block;
+	}
+
+	.cabecalho__direita {
+		display: flex;
+	}
+	.cabecalho__direita__compras,
+	.cabecalho__direita__usuario {
+		align-items: center;
+		color: black;
+		display: flex;
+		text-decoration: none;
+	}
+
+	.cabecalho {
+		padding: 0 2rem;
+	}
+
+	.cabecalho__opcoes {
+		margin-right: auto;
+	}
 }
