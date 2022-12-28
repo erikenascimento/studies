@@ -66,6 +66,11 @@
 	display: none;
 }
 
+.cabecalho__direita__compras__texto,
+.cabecalho__direita__usuario__texto {
+	display: none;
+}
+
 @media screen and (min-width: 1024px) {
 	.cabecalho__esquerda__titulo,
 	.cabecalho__esquerda__titulo--negrito {
@@ -111,11 +116,6 @@
 	.cabecalho__opcoes__botao:checked ~ .cabecalho__esquerda__listaMenu {
 		display: block;
 		width: auto;
-	}
-
-	.cabecalho__direita__compras__texto,
-	.cabecalho__direita__usuario__texto {
-		display: none;
 	}
 }
 
