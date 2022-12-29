@@ -18,10 +18,10 @@ async function criaVideo(titulo, descricao, url, imagem) {
 			imagem: imagem,
 		}),
 	});
-}
 
-const conexaoConvertida = await conexao.json();
-return conexaoConvertida;
+	const conexaoConvertida = await conexao.json();
+	return conexaoConvertida;
+}
 
 export const conectaApi = {
 	listaVideos,
