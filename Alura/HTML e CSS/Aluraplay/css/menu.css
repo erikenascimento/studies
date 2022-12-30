@@ -1,0 +1,16 @@
+.menu__container {
+	bottom: 0%;
+	height: 74px;
+	position: fixed;
+	width: 100%;
+}
+
+.menu__lista {
+	display: flex;
+}
+
+.menu__lista::nth-child(2),
+.menu__lista::nth-child(3),
+.menu__lista::nth-child(4) {
+	display: none;
+}
