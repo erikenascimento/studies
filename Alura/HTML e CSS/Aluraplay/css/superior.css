@@ -1,0 +1,7 @@
+.superior__secao__container {
+	align-items: center;
+	display: flex;
+	gap: 0.95rem;
+	overflow: scroll;
+	white-space: nowrap;
+}
