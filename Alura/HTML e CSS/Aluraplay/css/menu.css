@@ -7,6 +7,18 @@
 
 .menu__lista {
 	display: flex;
+	height: 100%;
+	justify-content: space-around;
+}
+
+.menu__lista li {
+	align-self: center;
+}
+
+.menu__itens {
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
 }
 
 .menu__lista:nth-child(2),
