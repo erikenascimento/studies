@@ -4,19 +4,26 @@
 }
 
 .secao__cartoes {
-	--largura-minima-da-coluna: 100%/2;
+	--largura-minima-da-coluna: 100%/2 - var(--gap-proporcional);
 	--max-largura-maxima-da-coluna: 100% / var(--quantidade-maxima-de-colunas);
 	--largura-maxima-da-coluna: max(
 		var(--min-largura-maxima-da-coluna),
-		var(--max-largura-maxima-da-coluna)
+		var(--max-largura-maxima-da-coluna) - var(--gap-proporcional)
 	);
 	--minimo: min(
 		var(--largura-minima-da-coluna),
 		var(--largura-maxima-da-coluna)
 	);
 
+	--gap-coluna: 1.25rem;
+	--gap-proporcional: var(--gap-coluna) *
+		(var(--quantidade-maxima-de-colunas) - 1) /
+		var(--quantidade-maxima-de-colunas);
+
 	display: grid;
+	column-gap: var(--gap-coluna);
 	grid-template-columns: repeat(auto-fit, minmax(var(--minimo), 1fr));
+	row-gap: 1rem;
 }
 
 .secao-horizontal {
