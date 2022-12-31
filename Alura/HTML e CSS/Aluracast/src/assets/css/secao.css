@@ -3,16 +3,29 @@
 	display: grid;
 }
 
+.secao__cartoes {
+	--largura-minima-da-coluna: 100%/2;
+	--max-largura-maxima-da-coluna: 100% / var(--quantidade-maxima-de-colunas);
+	--largura-maxima-da-coluna: max(
+		var(--min-largura-maxima-da-coluna),
+		var(--max-largura-maxima-da-coluna)
+	);
+	--minimo: min(
+		var(--largura-minima-da-coluna),
+		var(--largura-maxima-da-coluna)
+	);
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(var(--minimo), 1fr));
+}
+
 .secao-horizontal {
 	grid-template-rows: 120px auto;
 }
 
 .secao-horizontal .secao__cartoes {
-	display: grid;
-	grid-template-columns: repeat(
-		auto-fit,
-		minmax(min(100%/2, max(348px, 100%/3)), 1fr)
-	);
+	--quantidade-maxima-de-colunas: 3;
+	--min-largura-maxima-da-coluna: 348px;
 }
 
 .secao-vertical {
@@ -21,5 +34,8 @@
 }
 
 .secao-vertical .secao__cartoes {
+	--quantidade-maxima-de-colunas: 6;
+	--min-largura-maxima-da-coluna: 165px;
+
 	grid-column: 1/3;
 }
