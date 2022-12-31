@@ -1,4 +1,11 @@
+.videos__container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.7rem;
+}
+
 .videos__container__item {
+	flex-grow: 1;
 	height: 303px;
 	width: 280px;
 }
