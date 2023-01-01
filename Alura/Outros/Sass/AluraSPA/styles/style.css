@@ -17,4 +17,14 @@ nav ul li a {
 }
 nav ul li a:hover {
   border-bottom: 2px solid aquamarine;
+}
+
+.banner {
+  align-items: center;
+  background: url(../imagens/banner.jpeg) 27% center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  min-height: 350px;
+  opacity: 0.85;
 }/*# sourceMappingURL=style.css.map */
