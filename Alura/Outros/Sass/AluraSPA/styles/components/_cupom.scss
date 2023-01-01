@@ -11,4 +11,24 @@
             margin: 2rem;
         }
     }
+    &__inscricao__input {
+        background: white;
+        border: 2px solid white;
+        border-radius: 20px;
+        margin: 0 auto;
+        width: 575px;
+        input {
+            border: none;
+            border-radius: 20px;
+            font-size: 26px;
+            height: 40px;
+            outline: none;
+            text-align: center;
+            width: 540px;
+        }
+        &:hover, &:focus-within {
+            box-shadow: 1px 1px 8px 1px $cor-secundaria;
+            outline: none;
+        }
+    }
 }

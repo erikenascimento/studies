@@ -98,4 +98,24 @@ nav ul li a:hover {
 .cupom__texto h2 {
   font-size: 1.7647058824rem;
   margin: 2rem;
+}
+.cupom__inscricao__input {
+  background: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin: 0 auto;
+  width: 575px;
+}
+.cupom__inscricao__input input {
+  border: none;
+  border-radius: 20px;
+  font-size: 26px;
+  height: 40px;
+  outline: none;
+  text-align: center;
+  width: 540px;
+}
+.cupom__inscricao__input:hover, .cupom__inscricao__input:focus-within {
+  box-shadow: 1px 1px 8px 1px cornflowerblue;
+  outline: none;
 }/*# sourceMappingURL=style.css.map */
