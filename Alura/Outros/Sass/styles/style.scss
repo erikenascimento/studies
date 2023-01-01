@@ -1,3 +1,6 @@
+$cor-principal: blueviolet;
+$cor-secundaria: aquamarine;
+
 body {
     margin: 0;
     padding: 0;
@@ -7,20 +10,20 @@ body {
     display: flex;
     height: 100vh;
     .esquerdo {
-        background-color: blueviolet;
+        background-color: $cor-principal;
         width: 50%;
         .texto {
-            color: aquamarine;
+            color: $cor-secundaria;
             font-size: 150px;
             text-align: center;
             margin-top: 40%;
         }
     }
     .direito {
-        background-color: aquamarine;
+        background-color: $cor-secundaria;
         width: 50%;
         .texto {
-            color: blueviolet;
+            color: $cor-principal;
             font-size: 150px;
             text-align: center;
             margin-top: 40%;
