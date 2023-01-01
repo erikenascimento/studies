@@ -141,6 +141,21 @@ nav ul li a:hover {
   color: cornflowerblue;
 }
 
+.promocional {
+  background-color: teal;
+  text-align: center;
+  opacity: 0.9;
+}
+.promocional h3 {
+  color: blueviolet;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.promocional h4 {
+  color: gold;
+  font-weight: 300;
+}
+
 footer {
   text-align: center;
   font-size: 3rem;
