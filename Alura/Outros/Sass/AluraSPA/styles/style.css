@@ -16,7 +16,7 @@ nav ul li a {
   text-transform: uppercase;
 }
 nav ul li a:hover {
-  border-bottom: 2px solid aquamarine;
+  border-bottom: 2px solid cornflowerblue;
 }
 
 .banner {
@@ -29,7 +29,7 @@ nav ul li a:hover {
   opacity: 0.85;
 }
 .banner__inner {
-  background-color: aquamarine;
+  background-color: cornflowerblue;
   border-radius: 45px;
   padding: 3rem;
   opacity: 0.6;
@@ -67,9 +67,21 @@ nav ul li a:hover {
   text-align: center;
   width: 360px;
 }
+#servicos .cards__card h5 {
+  color: blueviolet;
+  font-size: 2.1428571429rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+#servicos .cards__card p {
+  color: teal;
+  font-size: 1rem;
+  font-weight: 300;
+}
 #servicos .cards__card__container {
   padding-bottom: 2px;
-  border-bottom: 6px solid aquamarine;
+  border-bottom: 6px solid cornflowerblue;
 }
 #servicos .cards__card__container img {
   max-width: 100%;
