@@ -11,6 +11,9 @@ nav {
                 font-weight: bold;
                 text-decoration: none;
                 text-transform: uppercase;
+                &:hover{
+                    border-bottom: 2px solid $cor-secundaria;
+                }
             }
         }
     }
