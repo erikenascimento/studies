@@ -31,4 +31,31 @@
             outline: none;
         }
     }
+    button {
+        //Cores
+        background-color: $cor-secundaria;
+        border: 2px $cor-primaria;
+        color: $cor-primaria;
+
+        //Texto
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-align: center;
+        text-transform: uppercase;
+
+        //Botao
+        cursor: pointer;
+        border-radius: 40px;
+        height: 40px;
+        margin-top: .75rem;
+        outline: none;
+        width: 130px;
+        
+        &:hover {
+            background-color: $cor-primaria;
+            border-color: $cor-terciaria;
+            color: $cor-secundaria;
+        }
+    }
 }
