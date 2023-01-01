@@ -27,4 +27,17 @@ nav ul li a:hover {
   justify-content: center;
   min-height: 350px;
   opacity: 0.85;
+}
+.banner__inner {
+  background-color: aquamarine;
+  border-radius: 45px;
+  padding: 3rem;
+  opacity: 0.6;
+}
+.banner__inner h1 {
+  color: blueviolet;
+  font-size: 3rem;
+}
+.banner__inner h2 {
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
