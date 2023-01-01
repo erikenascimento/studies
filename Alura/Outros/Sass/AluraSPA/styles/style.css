@@ -118,4 +118,25 @@ nav ul li a:hover {
 .cupom__inscricao__input:hover, .cupom__inscricao__input:focus-within {
   box-shadow: 1px 1px 8px 1px cornflowerblue;
   outline: none;
+}
+.cupom button {
+  background-color: cornflowerblue;
+  border: 2px blueviolet;
+  color: blueviolet;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 40px;
+  height: 40px;
+  margin-top: 0.75rem;
+  outline: none;
+  width: 130px;
+}
+.cupom button:hover {
+  background-color: blueviolet;
+  border-color: teal;
+  color: cornflowerblue;
 }/*# sourceMappingURL=style.css.map */
