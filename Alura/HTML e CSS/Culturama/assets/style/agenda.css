@@ -7,11 +7,29 @@
 }
 
 .agenda__item {
+	display: grid;
 	flex-grow: 1;
+	grid-template-areas:
+		"imagem imagem"
+		"info atracao";
 }
 
-@media (min-width: 720px) {
+.agenda__item > img {
+	grid-area: imagem;
+}
+
+@media screen and (min-width: 720px) {
 	.agenda__lista {
 		justify-content: end;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.agenda__lista {
+		justify-content: center;
+	}
+
+	.agenda__item {
+		width: 30%;
 	}
 }
