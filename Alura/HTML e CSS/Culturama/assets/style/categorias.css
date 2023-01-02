@@ -21,3 +21,30 @@
 		flex-grow: 1;
 	}
 }
+
+@media screen and (min-width: 1440px) {
+	.categorias {
+		gap: 1rem 1.5rem;
+		display: grid;
+		grid-template-areas:
+			"titulo vazio"
+			"lista destaques"
+			"lista imagem";
+	}
+
+	.categorias__titulo {
+		grid-area: titulo;
+	}
+
+	.categorias__lista {
+		grid-area: lista;
+	}
+
+	.categorias__destaques {
+		grid-area: destaques;
+	}
+
+	.categorias__imagem {
+		grid-area: imagem;
+	}
+}
