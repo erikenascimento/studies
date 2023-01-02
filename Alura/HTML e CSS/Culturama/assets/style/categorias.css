@@ -1,0 +1,23 @@
+.categorias__lista {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5rem;
+}
+
+@media screen and (min-width: 720px) {
+	.categorias__lista {
+		column-gap: 1.5rem;
+		flex-wrap: wrap;
+		row-gap: 1rem;
+	}
+
+	.destaques {
+		align-items: center;
+		display: flex;
+		gap: 10px;
+	}
+
+	.destaques__barra {
+		flex-grow: 1;
+	}
+}
