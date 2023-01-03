@@ -17,3 +17,9 @@
 	font-weight: 500;
 	margin-bottom: 0.8rem;
 }
+
+.categorias__lista__item > img:hover {
+	transform: scale(125%);
+	position: relative;
+	bottom: 12%;
+}
