@@ -1,0 +1,40 @@
+.rodape {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.2rem;
+	margin: 0 3vw;
+}
+
+.rodape > *,
+.rodape > * > * > a {
+	color: gray;
+	font-size: 0.8rem;
+	text-decoration: none;
+}
+
+.rodape__socialMedia {
+	color: white;
+	column-gap: 1.5rem;
+	display: flex;
+	font-size: 1rem;
+}
+
+.rodape__links {
+	display: flex;
+	column-gap: 13%;
+	flex-wrap: wrap;
+}
+
+.rodape__links > li {
+	height: 1.8rem;
+	width: 12%;
+}
+.rodape__servico {
+	border: 1px solid gray;
+	padding: 0.5rem;
+	width: fit-content;
+}
+
+.rodape__copyright {
+	margin: 2rem 0 1rem 0;
+}
