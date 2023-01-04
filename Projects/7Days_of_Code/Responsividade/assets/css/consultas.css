@@ -103,13 +103,16 @@
 }
 
 .consultas__card__inferior__botao {
-	font-family: "Montserrat";
 	border-radius: 8px;
 	border: none;
-	font-weight: 500;
-	font-size: 14px;
-	padding: 13px 16px 13px 16px;
 	flex-grow: 1;
+	padding: 13px 16px;
+
+	/* Typografia */
+
+	font-family: "Montserrat";
+	font-size: 14px;
+	font-weight: 500;
 }
 
 /* Estilizando os 3 tipos de botoes */
@@ -128,12 +131,21 @@
 .--botaoLocal {
 	background-color: var(--azulDetalhe);
 	color: white;
+	max-width: 100%;
 }
 
 @media screen and (min-width: 720px) {
-	.listaConsultas {
-		flex-wrap: wrap;
-		width: 30vw;
+	.consultas {
+		gap: 2rem;
+	}
+
+	.consultas__card {
+		width: calc(50% - 1rem);
+		max-width: calc(50% - 1rem);
+	}
+
+	.--botaoLocal {
+		max-width: 100%;
 	}
 }
 
