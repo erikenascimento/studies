@@ -1,0 +1,156 @@
+.consultas {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 1rem;
+}
+
+.consultas__dia {
+	font-weight: 700;
+	margin-top: 2rem;
+	width: 100%;
+}
+
+.consultas__card {
+	flex-grow: 1;
+	background-color: white;
+	border-radius: 8px;
+}
+
+.consultas__card > div {
+	padding: 1rem 1.5rem;
+}
+
+/* Parte de cima do card */
+
+.consultas__card__superior {
+	align-items: center;
+	display: flex;
+	column-gap: 1rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.consultas__card__superior__imagemPaciente {
+	display: block;
+	background-size: contain;
+	border-radius: 100%;
+	max-height: 32px;
+	max-width: 32px;
+	min-height: 32px;
+	min-width: 32px;
+}
+
+.consultas__card__superior__textos {
+	margin-right: auto;
+}
+
+.consultas__card__superior__textos__nomePaciente {
+	font-size: 14px;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+
+.consultas__card__superior__textos__tipoConsulta {
+	display: flex;
+	color: var(--cinzaSecundario);
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.consultas__card__superior__textos__tipoConsulta::before {
+	background-size: contain;
+	content: "";
+	margin-right: 0.5rem;
+	height: 1rem;
+	width: 1rem;
+}
+
+/* Modificando icone do tipo de consultas */
+
+.--consultaRemota {
+	background-image: url(../images/icones/Camera.png);
+	background-repeat: no-repeat;
+}
+
+.--consultaLocal {
+	background-image: url(../images/icones/pin.png);
+	background-repeat: no-repeat;
+}
+
+/* Retornando a estilizar o card superior*/
+
+.consultas__card__superior__balao {
+	background-image: url(../images/icones/chat1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 2rem;
+	justify-self: end;
+	width: 2rem;
+}
+
+/* Parte de baixo do card */
+
+.consultas__card__inferior {
+	column-gap: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 1rem;
+}
+
+.consultas__card__inferior__horario {
+	font-size: 12px;
+	font-weight: 500;
+	width: 100%;
+}
+
+.consultas__card__inferior__botao {
+	font-family: "Montserrat";
+	border-radius: 8px;
+	border: none;
+	font-weight: 500;
+	font-size: 14px;
+	padding: 13px 16px 13px 16px;
+	flex-grow: 1;
+}
+
+/* Estilizando os 3 tipos de botoes */
+
+.--botaoVideo {
+	color: white;
+	background-color: var(--laranjaBotao);
+	margin-right: auto;
+}
+
+.--botaoAudio {
+	background-color: white;
+	border: 1px solid #ececec;
+}
+
+.--botaoLocal {
+	background-color: var(--azulDetalhe);
+	color: white;
+}
+
+@media screen and (min-width: 720px) {
+	.listaConsultas {
+		flex-wrap: wrap;
+		width: 30vw;
+	}
+}
+
+/* Imagem dos pacientes */
+
+.--LucianaDias {
+	background-image: url(../images/perfil/perfil-2.jpg);
+}
+
+.--LarissaSantana {
+	background-image: url(../images/perfil/perfil-3.jpg);
+}
+
+.--MarcosCorreia {
+	background-image: url(../images/perfil/perfil-4.jpg);
+}
+
+.--ClaraLemos {
+	background-image: url(../images/perfil/perfil-5.jpg);
+}
