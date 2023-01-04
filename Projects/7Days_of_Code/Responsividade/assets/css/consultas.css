@@ -154,6 +154,22 @@
 	}
 }
 
+@media screen and (min-width: 1440px) {
+	.consultas {
+		column-gap: 3rem;
+		margin: 0 2rem;
+	}
+
+	.consultas__dia {
+		margin: 2rem 0 0 -2rem;
+	}
+
+	.consultas .consultas__card {
+		width: calc(33.333% - 2rem);
+		max-width: calc(33.333% - 2rem);
+	}
+}
+
 /* Imagem dos pacientes */
 
 .--LucianaDias {
