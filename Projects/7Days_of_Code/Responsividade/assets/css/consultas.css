@@ -134,7 +134,7 @@
 	max-width: 100%;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
 	.consultas {
 		gap: 2rem;
 	}
@@ -142,6 +142,11 @@
 	.consultas__card {
 		width: calc(50% - 1rem);
 		max-width: calc(50% - 1rem);
+	}
+
+	.consultas__card__inferior__botao {
+		white-space: nowrap;
+		width: calc(50% - 0.5rem);
 	}
 
 	.--botaoLocal {
