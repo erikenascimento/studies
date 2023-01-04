@@ -8,7 +8,7 @@
 	background-color: white;
 	border-radius: 8px;
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 	margin-bottom: 1rem;
 	padding: 1rem;
 	width: calc(90vw -2rem);
@@ -70,7 +70,7 @@
 }
 
 .listaConsultas__balao {
-	align-self: flex-end;
+	justify-self: flex-end;
 	background-image: url(../images/icones/chat1.png);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -113,6 +113,13 @@
 .botao--audio {
 	background-color: white;
 	border: 1px solid #ececec;
+}
+
+@media screen and (min-width: 720px) {
+	.listaConsultas {
+		flex-wrap: wrap;
+		width: 30vw;
+	}
 }
 
 .botao--endereco {
