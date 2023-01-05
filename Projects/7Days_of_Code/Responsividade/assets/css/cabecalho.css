@@ -1,6 +1,7 @@
 .cabecalho {
-	display: flex;
 	column-gap: 1rem;
+	display: flex;
+	margin: 1rem 2rem;
 }
 
 .cabecalho__imagemPerfil {

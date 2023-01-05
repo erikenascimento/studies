@@ -1,6 +1,7 @@
 .consultas {
 	display: flex;
 	flex-wrap: wrap;
+	margin: 1rem 2rem;
 	row-gap: 1rem;
 }
 
@@ -158,10 +159,6 @@
 	.consultas {
 		column-gap: 3rem;
 		margin: 0 2rem;
-	}
-
-	.consultas__dia {
-		margin: 2rem 0 0 -2rem;
 	}
 
 	.consultas .consultas__card {
