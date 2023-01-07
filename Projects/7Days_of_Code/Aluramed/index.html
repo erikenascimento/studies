@@ -5,13 +5,14 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>Consultas</title>
+		<title>Aluramed</title>
 
 		<link rel="stylesheet" href="./assets/css/reset.css" />
 		<link rel="stylesheet" href="./assets/css/style.css" />
 		<link rel="stylesheet" href="./assets/css/cabecalho.css" />
 		<link rel="stylesheet" href="./assets/css/menu.css" />
 		<link rel="stylesheet" href="./assets/css/consultas.css" />
+		<link rel="stylesheet" href="./assets/css/botoesMobile.css" />
 
 		<script
 			src="https://kit.fontawesome.com/7d663b395a.js"
@@ -19,6 +20,8 @@
 		></script>
 	</head>
 	<body>
+		<span class="overlay"></span>
+
 		<header class="cabecalho">
 			<span class="cabecalho__imagemPerfil"></span>
 			<article class="cabecalho__textos">
@@ -364,5 +367,26 @@
 				</div>
 			</div>
 		</main>
+		<ul class="botoesMobile">
+			<li class="botoesMobile__item">
+				<p class="botoesMobile__item__mensagem">
+					Nova consulta na casa do paciente
+				</p>
+				<div class="botoesMobile__item__botao">
+					<i class="fa-solid fa-location-dot"></i>
+				</div>
+			</li>
+			<li class="botoesMobile__item">
+				<p class="botoesMobile__item__mensagem">Nova consulta por vídeo</p>
+				<div class="botoesMobile__item__botao">
+					<i class="fa-solid fa-video"></i>
+				</div>
+			</li>
+			<li class="botoesMobile__item">
+				<div class="botoesMobile__item__botao">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+			</li>
+		</ul>
 	</body>
 </html>
