@@ -2,7 +2,7 @@
 	border-radius: 1rem;
 	display: flexbox;
 	flex-direction: column;
-	margin: 10vh 10vw; /* so pra visualizar melhor */
+	margin-top: 2rem;
 	position: relative;
 	height: 468px;
 	width: 780px;

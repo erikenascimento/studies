@@ -34,3 +34,8 @@ a {
 	color: var(--primario);
 	text-decoration: none;
 }
+
+main,
+section {
+	margin-left: 10vw;
+}
