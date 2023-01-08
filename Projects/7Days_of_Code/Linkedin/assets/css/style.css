@@ -39,3 +39,21 @@ main,
 section {
 	margin-left: 10vw;
 }
+
+.--containerPadrao {
+	background-color: var(--cinzaCard);
+	border-radius: 16px;
+	width: 780px;
+}
+
+.--imgPublicacao1 {
+	background-image: url(../images/publicacao-1.jpg);
+}
+
+.--imgPublicacao2 {
+	background-image: url(../images/publicacao-2.jpg);
+}
+
+.--imgPublicacao3 {
+	background-image: url(../images/publicacao-3.jpg);
+}
