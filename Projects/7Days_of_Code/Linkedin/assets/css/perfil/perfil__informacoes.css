@@ -1,9 +1,7 @@
 .perfil__informacoes {
-	background-color: var(--cinzaCard);
 	border-radius: 0 0 1rem 1rem;
 	display: flex;
 	height: 238px;
-	width: 100%;
 }
 
 .perfil__informacoes__imagem {
@@ -20,7 +18,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin: 7.5% 0% 2.5% 2.5%;
+	padding-top: 7.5%;
 	width: 50%;
 }
 

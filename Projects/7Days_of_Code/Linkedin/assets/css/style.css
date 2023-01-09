@@ -43,7 +43,8 @@ section {
 .--containerPadrao {
 	background-color: var(--cinzaCard);
 	border-radius: 16px;
-	width: 780px;
+	padding: 1rem;
+	width: calc(780px - 2rem);
 }
 
 .--imgPublicacao1 {
