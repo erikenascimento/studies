@@ -22,7 +22,7 @@
 }
 
 .atividades__lista__item__publicador--idadePost::before {
-	content: " · ";
+	content: " • ";
 	padding-left: 0.3rem;
 }
 

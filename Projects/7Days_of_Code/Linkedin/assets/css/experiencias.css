@@ -1,0 +1,29 @@
+.experiencias > * {
+	padding-bottom: 0.9rem;
+}
+
+.experiencias__empresa,
+.experiencias__cargo {
+	align-items: center;
+	display: flex;
+	column-gap: 0.5rem;
+}
+
+.experiencias__empresa__imagem {
+	background-image: url(../images/rectangle5.jpg);
+	display: block;
+	height: 48px;
+	width: 48px;
+}
+
+.experiencias__empresa__descricao__periodo {
+	color: var(--cinzaTextoSecundario);
+}
+
+.experiencias__cargo > svg {
+	width: 48px;
+}
+
+.experiencias__cargo__descricao > p {
+	color: var(--cinzaTextoSecundario);
+}
