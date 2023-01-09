@@ -9,6 +9,7 @@
 	border-radius: 100%;
 	height: 160px;
 	left: 3%;
+	margin-left: 10vw;
 	position: absolute;
 	top: 25%;
 	width: 160px;
@@ -22,21 +23,9 @@
 	width: 50%;
 }
 
-.perfil__informacoes__bio__nome {
-	font-size: 1.5rem;
-	font-weight: 600;
-}
-
-.perfil__informacoes__bio__cargo {
-	font-weight: 600;
-}
-
-.perfil__informacoes__bio__descricao {
-	font-size: 14px;
-}
-
+.perfil__informacoes__bio__descricao,
 .perfil__informacoes__bio__local {
-	font-size: 14px;
+	color: var(--cinzaTextoSecundario);
 }
 
 .perfil__informacoes__bio__texto__contato::before {
@@ -44,7 +33,6 @@
 }
 
 .perfil__informacoes__bio__texto__contato {
-	font-size: 14px;
 	font-weight: 700;
 }
 
@@ -53,24 +41,25 @@
 }
 
 .perfil__informacoes__bio__botoes__botao {
-	border: 1px solid var(--primario);
+	border: 1px solid var(--Azulprimario);
 	border-radius: 1rem;
 	padding: 6px;
 	width: 8rem;
 }
 
 .botao--mensagem {
-	background-color: var(--primario);
+	background-color: var(--Azulprimario);
 	color: var(--pretoTexto);
-	font-family: "Roboto";
-	font-size: 14px;
-	font-weight: 500;
 	margin-right: 0.6rem;
 }
 
 .botao--mais {
 	background-color: transparent;
-	color: var(--primario);
+	color: var(--Azulprimario);
+}
+
+.botao--mais,
+.botao--mensagem {
 	font-family: "Roboto";
 	font-size: 14px;
 	font-weight: 500;

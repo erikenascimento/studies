@@ -1,0 +1,60 @@
+.atividades {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.6rem;
+}
+
+.atividades__lista__item {
+	border-bottom: 1px solid #ffffff99;
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 0.6rem;
+}
+
+.atividades__lista__item__publicador--idadePost {
+	width: 65%;
+}
+
+.atividades__lista__item__publicador,
+.atividades__lista__item__publicador--idadePost {
+	color: var(--cinzaTextoSecundario);
+	font-size: 14px;
+}
+
+.atividades__lista__item__publicador--idadePost::before {
+	content: " · ";
+	padding-left: 0.3rem;
+}
+
+.atividades__lista__item__publicacao {
+	align-items: center;
+	display: flex;
+	column-gap: 0.5rem;
+}
+
+.atividades__lista__item__publicacao__imagem {
+	height: 64px;
+	object-fit: cover;
+	width: 64px;
+}
+
+.atividades__lista__item__publicacao__texto {
+	width: 100%;
+}
+
+.atividades__lista__item__impressoes {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 0.4rem;
+	width: 100%;
+}
+
+.atividades__lista__item__impressoes > p {
+	color: var(--cinzaTextoSecundario);
+	font-size: 12px;
+}
+
+.atividades__exibirTodas {
+	align-self: center;
+	color: var(--cinzaTextoSecundario);
+}

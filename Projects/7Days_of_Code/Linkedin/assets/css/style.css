@@ -9,13 +9,15 @@
 	--cinzaTextoSecundario: hsla(0, 0%, 100%, 0.6);
 	--pretoTexto: hsla(0, 0%, 0%, 0.75);
 	--input: #38434f;
-	--primario: #70b5f9;
+	--Azulprimario: #70b5f9;
 	--positivo: #3ec786;
+
+	--fontePadrao: "Roboto", sans-serif;
 }
 
 body {
 	background-color: var(--pretoFundo);
-	font-family: "Roboto", sans-serif;
+	font-family: var(--fontePadrao);
 }
 
 h1,
@@ -26,23 +28,37 @@ h5 {
 	color: var(--brancoTextoPrincipal);
 }
 
+h1,
+h2,
+h3 {
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
 p {
-	color: var(--cinzaTextoSecundario);
+	color: var(--brancoTextoPrincipal);
+	font-size: 14px;
+	line-height: 20px;
 }
 
 a {
-	color: var(--primario);
+	color: var(--Azulprimario);
+	font-size: 14px;
+	font-weight: 500;
 	text-decoration: none;
-}
-
-main,
-section {
-	margin-left: 10vw;
 }
 
 .--containerPadrao {
 	background-color: var(--cinzaCard);
 	border-radius: 16px;
+	margin: 0 0 1rem 10vw;
 	padding: 1rem;
 	width: calc(780px - 2rem);
 }

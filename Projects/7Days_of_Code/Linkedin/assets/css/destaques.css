@@ -1,13 +1,10 @@
 .destaques {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 1rem;
 	row-gap: 0.5rem;
 }
 
 .destaques__titulo {
-	font-size: 20px;
-	font-weight: 600;
 	width: 100%;
 }
 
@@ -27,12 +24,14 @@
 	width: 238px;
 }
 
-.destaques__lista__item > p,
-h4 {
+.destaques__lista__item__titulo,
+.destaques__lista__item__legenda {
 	padding-left: 14px;
 }
 
-.destaques__lista__item__titulo {
+.destaques__lista__item__titulo,
+.destaques__lista__item__impressoes > p {
+	color: var(--cinzaTextoSecundario);
 	font-size: 12px;
 }
 
@@ -44,10 +43,6 @@ h4 {
 	display: block;
 	height: 152px;
 	width: 236px;
-}
-
-.destaques__lista__item__impressoes > p {
-	font-size: 12px;
 }
 
 .destaques__lista__item__impressoes {
