@@ -1,0 +1,86 @@
+aside {
+	left: calc(10vw + 780px + 2rem);
+	position: absolute;
+	top: calc(52px + 2rem);
+}
+
+.sugestoes {
+	background-color: var(--cinzaCard);
+	border-radius: 16px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0.5rem;
+	padding: 1rem;
+	row-gap: 1rem;
+	width: calc(320px - 2rem);
+}
+
+.sugestoes__lista {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+}
+
+.sugestoes__lista__item {
+	display: flex;
+	column-gap: 0.4rem;
+}
+
+.sugestoes__lista__item__imagem {
+	display: block;
+	height: 48px;
+	width: 48px;
+}
+
+.sugestoes__lista__item__descricao {
+	width: calc(100% - 48px - 0.4rem);
+}
+
+.sugestoes__lista__item__descricao > * {
+	padding-bottom: 0.2rem;
+}
+
+.sugestoes__lista__item__descricao__nome {
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.sugestoes__lista__item__descricao__cargo {
+	color: var(--cinzaTextoSecundario);
+	font-size: 12px;
+	line-height: 14.52px;
+}
+
+.sugestoes__lista__item__descricao__botao {
+	background-color: transparent;
+	border: 1px solid #ffffffe5;
+	border-radius: 16px;
+	color: white;
+	font-weight: 700;
+	line-height: 16.94px;
+	margin-top: 0.2rem;
+	padding: 3.5px 0.8rem;
+	text-align: center;
+}
+
+/* Imagens de Perfil */
+
+.sugestoes__lista__item:nth-child(1) > .sugestoes__lista__item__imagem {
+	background-image: url(../images/perfil/botao\ -\ enviar\ mensagem-1.png);
+}
+
+.sugestoes__lista__item:nth-child(2) > .sugestoes__lista__item__imagem {
+	background-image: url(../images/perfil/botao\ -\ enviar\ mensagem-2.png);
+}
+
+.sugestoes__lista__item:nth-child(3) > .sugestoes__lista__item__imagem {
+	background-image: url(../images/perfil/botao\ -\ enviar\ mensagem-3.png);
+}
+
+.sugestoes__lista__item:nth-child(4) > .sugestoes__lista__item__imagem {
+	background-image: url(../images/perfil/botao\ -\ enviar\ mensagem-4.png);
+}
+
+.sugestoes__lista__item:nth-child(5) > .sugestoes__lista__item__imagem {
+	background-image: url(../images/perfil/botao\ -\ enviar\ mensagem-9.png);
+}
