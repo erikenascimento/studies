@@ -1,0 +1,29 @@
+.formacao {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.8rem 0.5rem;
+}
+
+.formacao__titulo {
+	width: 100%;
+}
+
+.formacao__imagem {
+	background-image: url(../images/rectangle5_1.jpg);
+	display: block;
+	height: 48px;
+	width: 48px;
+}
+
+.formacao__descricao > * {
+	padding-bottom: 0.2rem;
+}
+
+.formacao__descricao__curso,
+.formacao__descricao__periodo {
+	font-size: 14px;
+}
+
+.formacao__descricao__periodo {
+	color: var(--cinzaTextoSecundario);
+}

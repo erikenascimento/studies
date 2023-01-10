@@ -1,0 +1,24 @@
+.idiomas__titulo {
+	padding-bottom: 0.8rem;
+}
+
+.idiomas__titulo__lista__item {
+	border-bottom: 1px solid #ffffff99;
+	padding-bottom: 0.6rem;
+	margin-bottom: 1rem;
+	width: 100%;
+}
+
+.idiomas__titulo__lista__item > * {
+	padding-bottom: 0.2rem;
+}
+
+.idiomas__titulo__lista__item:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.idiomas__titulo__lista__item__fluencia {
+	color: var(--cinzaTextoSecundario);
+}
