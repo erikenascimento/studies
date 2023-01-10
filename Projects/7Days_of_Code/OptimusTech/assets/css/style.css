@@ -6,6 +6,7 @@
 	--cinzaSecundario: #667085;
 	--cinzaRodape: #98a2b3;
 	--vermelhoDetalhe: #8e2424;
+	--vermelhoRealce: rgba(196, 25, 25, 0.03);
 
 	--fontePrincipal: "Inter", sans-serif;
 }
@@ -16,6 +17,7 @@ body {
 	flex-direction: column;
 	font-family: var(--fontePrincipal);
 	row-gap: 96px;
+	text-align: center;
 }
 
 h1,

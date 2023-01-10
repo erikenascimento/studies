@@ -6,7 +6,7 @@
 }
 
 .vagas__span {
-	background: rgba(142, 36, 36, 0.05);
+	background: var(--vermelhoRealce);
 	border-radius: 16px;
 	color: var(--vermelhoDetalhe);
 	font-size: 14px;

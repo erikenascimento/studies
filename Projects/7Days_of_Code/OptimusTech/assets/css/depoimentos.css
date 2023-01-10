@@ -1,0 +1,40 @@
+.depoimentos {
+	align-items: center;
+	background-color: var(--vermelhoRealce);
+	display: flex;
+	flex-direction: column;
+	padding: 64px;
+	row-gap: 1rem;
+	width: 80vw;
+}
+
+.depoimentos__span {
+	color: var(--vermelhoDetalhe);
+	font-size: 14px;
+}
+
+.depoimentos__titulo {
+	font-size: 36px;
+	font-weight: 500;
+	width: 80%;
+}
+
+.depoimentos__perfil {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin-top: 1rem;
+	row-gap: 1rem;
+}
+
+.depoimentos__perfil__imagem {
+	background-image: url(../images/Avatar.png);
+	border-radius: 100%;
+	display: block;
+	height: 56px;
+	width: 56px;
+}
+
+.depoimentos__perfil__profissao {
+	font-size: 14px;
+}
