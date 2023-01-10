@@ -11,6 +11,7 @@
 }
 
 body {
+	align-items: center;
 	display: flex;
 	flex-direction: column;
 	font-family: var(--fontePrincipal);
@@ -40,4 +41,9 @@ h4 {
 
 p {
 	color: var(--cinzaSecundario);
+}
+
+a {
+	color: var(--cinzaSecundario);
+	text-decoration: none;
 }

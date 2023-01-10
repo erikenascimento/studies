@@ -1,0 +1,44 @@
+.navegacao {
+	align-items: center;
+	align-self: flex-start;
+	column-gap: 120px;
+	display: flex;
+	font-weight: 500;
+	height: 80px;
+	width: 80vw;
+}
+
+.navegacao__logo {
+	align-items: center;
+	column-gap: 8px;
+	display: flex;
+}
+
+.navegacao__logo__marca {
+	color: var(--pretoSecundario);
+	font-size: 18px;
+}
+
+.navegacao__itens {
+	align-items: center;
+	column-gap: 32px;
+	display: flex;
+	white-space: nowrap;
+}
+
+.navegacao__conta {
+	column-gap: 12px;
+	display: flex;
+	justify-self: end;
+	margin-left: auto;
+}
+
+.navegacao__conta__botao {
+	border-radius: 8px;
+	padding: 10px 18px;
+}
+
+.navegacao__conta__botao:last-child {
+	color: white;
+	background-color: var(--vermelhoDetalhe);
+}

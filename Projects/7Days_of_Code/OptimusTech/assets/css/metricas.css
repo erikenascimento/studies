@@ -1,0 +1,30 @@
+.metricas {
+	width: 80vw;
+}
+
+.metricas__lista {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.metricas__lista__item {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+	width: calc((100% - 32px * 5) / 4);
+}
+
+.metricas__lista__item__quantidade {
+	color: var(--vermelhoDetalhe);
+	font-size: 60px;
+	font-weight: 600;
+}
+
+.metricas__lista__item__categoria {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.metricas__lista__item__descricao {
+	line-height: 24px;
+}
