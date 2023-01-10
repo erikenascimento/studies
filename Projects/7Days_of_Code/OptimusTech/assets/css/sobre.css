@@ -1,24 +1,23 @@
-.principal {
+.sobre {
+	align-self: center;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 12.5rem;
-	margin: 7% calc((100vw - 42vw) / 2);
+	row-gap: 24px;
 	width: 42vw;
 }
 
-.principal__span {
+.sobre__span {
 	color: var(--vermelhoDetalhe);
 	font-weight: 600;
 }
 
-.principal__titulo {
+.sobre__titulo {
 	font-size: 48px;
-	font-weight: 600;
 }
 
-.principal__texto {
+.sobre__texto {
 	font-size: 20px;
 	text-align: center;
 	line-height: 30px;

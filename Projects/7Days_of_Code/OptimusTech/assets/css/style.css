@@ -6,11 +6,15 @@
 	--cinzaSecundario: #667085;
 	--cinzaRodape: #98a2b3;
 	--vermelhoDetalhe: #8e2424;
+
+	--fontePrincipal: "Inter", sans-serif;
 }
 
-body main {
-	font-family: "Inter", sans-serif;
-	margin: 10%;
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: var(--fontePrincipal);
+	row-gap: 96px;
 }
 
 h1,
@@ -19,6 +23,19 @@ h3,
 h4,
 h5 {
 	color: var(--pretoPrincipal);
+}
+
+h2 {
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+h4 {
+	font-size: 18px;
 }
 
 p {
