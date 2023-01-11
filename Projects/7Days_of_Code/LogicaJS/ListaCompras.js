@@ -4,11 +4,21 @@ let gorduras = [];
 
 let alimento = "";
 let categoria = "";
-let pergunta = "Sim";
+let pergunta = "";
+let remove = "";
 
-while (pergunta == "Sim") {
+let repete = true;
+
+function imprimirLista() {
+	return console.log(`Lista de compras:
+        Carboidratos: ${carboidratos}
+        Proteínas: ${proteinas}
+        Gorduras: ${gorduras}`);
+}
+
+while (repete) {
 	pergunta = prompt(
-		"Digite 'Sim' caso você queira adicionar um alimento na sua lista de compras."
+		"Digite 'Sim' caso você queira adicionar um alimento na sua lista de compras. Digite 'Não' se quiser ver a lista. Digite qualquer outra coisa para sair."
 	);
 
 	if (pergunta == "Sim") {
@@ -21,10 +31,22 @@ while (pergunta == "Sim") {
 		else if (categoria == "Proteinas" || categoria == "Proteínas")
 			proteinas.push(alimento);
 		else if (categoria == "Gorduras") gorduras.push(alimento);
-	}
+	} else if (pergunta == "Não") {
+		imprimirLista();
+
+		remove = prompt("Qual alimento deseja remover?");
+
+		if (carboidratos.includes(remove)) {
+			carboidratos.splice(carboidratos.indexOf(remove), 1);
+			alert(`${remove} foi removido.`);
+		} else if (proteinas.includes(remove)) {
+			proteinas.splice(proteinas.indexOf(remove), 1);
+			alert(`${remove} foi removido.`);
+		} else if (gorduras.includes(remove)) {
+			gorduras.splice(gorduras.indexOf(remove), 1);
+			alert(`${remove} foi removido.`);
+		} else alert("Não foi possível encontrar o item dentro da lista");
+	} else repete = false;
 }
 
-console.log(`Lista de compras:
-    Carboidratos: ${carboidratos}
-    Proteínas: ${proteinas}
-    Gorduras: ${gorduras}`);
+imprimirLista();
