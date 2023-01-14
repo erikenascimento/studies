@@ -1,3 +1,11 @@
+let botaoPlacar = $("#botao-placar");
+
+botaoPlacar.click(MostraPlacar);
+
+function MostraPlacar() {
+	$(".placar").slideToggle(600);
+}
+
 function NovaLinha() {
 	$("#botao-remover").click(function (event) {
 		event.preventDefault();
