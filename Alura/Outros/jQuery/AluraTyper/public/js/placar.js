@@ -9,7 +9,12 @@ function MostraPlacar() {
 function NovaLinha() {
 	$("#botao-remover").click(function (event) {
 		event.preventDefault();
-		$(this).parent().parent().parent().remove();
+
+		let elementoBisavo = $(this).parent().parent().parent();
+		elementoBisavo.fadeOut(600);
+		setTimeout(function () {
+			elementoBisavo.remove();
+		}, 601);
 	});
 }
 
