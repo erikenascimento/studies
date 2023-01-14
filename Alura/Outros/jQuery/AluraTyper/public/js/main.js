@@ -71,10 +71,18 @@ function FinalizaJogo() {
 	InserePlacar();
 }
 
+function NovaLinha() {
+	$("#botao-remover").click(function (event) {
+		event.preventDefault();
+		$(this).parent().parent().parent().remove();
+	});
+}
+
 function InserePlacar() {
 	let corpoTabela = $("#corpo-tabela");
 
-	let jogador = "Erik";
+	let jogador = $("#nome-jogador").val();
+	if (!jogador) jogador = "Jubileu";
 
 	corpoTabela.append(`
 	<tr>
@@ -87,10 +95,7 @@ function InserePlacar() {
 		<td>
 	</tr>`);
 
-	$("#botao-remover").click(function (event) {
-		event.preventDefault();
-		$(this).parent().parent().parent().remove();
-	});
+	NovaLinha();
 }
 
 function ReiniciaJogo() {
@@ -102,4 +107,6 @@ function ReiniciaJogo() {
 	contadorPalavras.text("0");
 	contadorCaracteres.text("0");
 	$("#tempo-digitacao").text(tempoInicial);
+	tempoDigitacao = tempoInicial;
+	InicializaCronometro();
 }
