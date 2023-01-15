@@ -1,13 +1,17 @@
+let placar = $(".placar");
+let corpoTabela = $("#corpo-tabela");
+
 let botaoPlacar = $("#botao-placar");
+let botaoRemover = $("#botao-remover");
 
 botaoPlacar.click(MostraPlacar);
 
 function MostraPlacar() {
-	$(".placar").slideToggle(600);
+	placar.stop().slideToggle(600);
 }
 
 function NovaLinha() {
-	$("#botao-remover").click(function (event) {
+	botaoRemover.click(function (event) {
 		event.preventDefault();
 
 		let elementoBisavo = $(this).parent().parent().parent();
@@ -19,10 +23,8 @@ function NovaLinha() {
 }
 
 function InserePlacar() {
-	let corpoTabela = $("#corpo-tabela");
-
 	let jogador = $("#nome-jogador").val();
-	if (!jogador) jogador = "Jubileu";
+	if (!jogador) jogador = "Jubileu"; //placeholder
 
 	corpoTabela.append(`
 	<tr>
@@ -36,4 +38,16 @@ function InserePlacar() {
 	</tr>`);
 
 	NovaLinha();
+	placar.slideDown(600);
+	ScrollPlacar();
+}
+
+function ScrollPlacar() {
+	let posicaoPlacar = placar.offset().top;
+	$("html").animate(
+		{
+			scrollTop: `${posicaoPlacar}px`,
+		},
+		1000
+	);
 }
