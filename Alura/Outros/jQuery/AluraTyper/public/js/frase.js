@@ -1,11 +1,14 @@
-let botaoFrase = $("#botao-frase");
+$("#botao-frase").click(fraseAleatoria);
 
-botaoFrase.click(PegaFrase);
-
-function PegaFrase() {
-	$.get("http://localhost:3000/frases", FraseAleatoria);
+function fraseAleatoria() {
+    $.get("http://localhost:3000/frases", trocaFraseAleatoria);
 }
 
-function FraseAleatoria(data) {
-	$(".frase").text(data[Math.floor(Math.random() * data.length)].texto);
+function trocaFraseAleatoria(data) {
+    var frase = $(".frase");
+    var numeroAleatorio = Math.floor(Math.random() * data.length);
+
+    frase.text(data[numeroAleatorio].texto);
+    atualizaTamanhoFrase();
+    atualizaTempoInicial(data[numeroAleatorio].tempo);
 }
