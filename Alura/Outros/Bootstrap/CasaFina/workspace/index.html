@@ -13,11 +13,37 @@
 		/>
 	</head>
 	<body>
-		<h2>Sobre Nós</h2>
-		<img
-			src="../assets/img/empresa.jpg"
-			alt="Duas pessoas olhando a tela de um notebook"
-			class="img-responsive"
-		/>
+		<section class="container">
+			<h2>Sobre Nós</h2>
+			<img
+				src="../assets/img/empresa.jpg"
+				alt="Duas pessoas olhando a tela de um notebook"
+				class="img-responsive"
+			/>
+
+			<h3 data-toggle="collapse" data-target="#primeiro-paragrafo">
+				Desde 1935
+			</h3>
+			<p id="primeiro-paragrafo" class="collapse.in">
+				Desde 1935 trazendo casas, mansões e prédios lindos para o mundo.
+			</p>
+
+			<h3 data-toggle="collapse" data-target="#segundo-paragrafo">
+				Preços acessíveis
+			</h3>
+			<p id="segundo-paragrafo" class="collapse">
+				Preços a partir de R$ 1000,00.
+			</p>
+
+			<h3 data-toggle="collapse" data-target="#terceiro-paragrafo">
+				Alegria em colaborar para um mundo mais bonito
+			</h3>
+			<p id="terceiro-paragrafo" class="collapse">
+				Trazendo alegria para a vida das pessoas que tem dinheiro para gastar.
+			</p>
+		</section>
+
+		<script src="./assets/jquery.js"></script>
+		<script src="./assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 	</body>
 </html>
