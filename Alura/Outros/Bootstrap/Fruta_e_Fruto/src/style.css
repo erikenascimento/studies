@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.fonte-titulo {
+	font-family: "Pacifico", cursive;
+}
+
+.carrossel__imagem {
+	object-fit: cover;
+	object-position: 0 60%;
+	height: 400px;
+}
