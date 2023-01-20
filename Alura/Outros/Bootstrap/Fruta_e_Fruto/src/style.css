@@ -11,7 +11,7 @@
 }
 
 .cor-titulo {
-	color: darkred;
+	color: darkred !important;
 }
 
 .cor-botao {
