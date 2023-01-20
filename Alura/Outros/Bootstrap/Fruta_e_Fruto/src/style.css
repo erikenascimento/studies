@@ -22,3 +22,12 @@
 .cor-borda {
 	border-color: darkred;
 }
+
+.posicao-card {
+	object-fit: cover;
+	height: 200px;
+}
+
+.receitas__card {
+	width: 18rem;
+}
