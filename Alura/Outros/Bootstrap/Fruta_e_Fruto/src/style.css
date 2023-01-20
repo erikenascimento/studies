@@ -4,12 +4,21 @@
 	font-family: "Pacifico", cursive;
 }
 
-.cor-titulo {
-	color: darkred;
-}
-
 .carrossel__imagem {
 	object-fit: cover;
 	object-position: 0 60%;
 	height: 400px;
+}
+
+.cor-titulo {
+	color: darkred;
+}
+
+.cor-botao {
+	color: white;
+	background-color: darkred;
+}
+
+.cor-borda {
+	border-color: darkred;
 }
