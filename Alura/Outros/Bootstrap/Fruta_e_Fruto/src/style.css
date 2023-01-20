@@ -4,6 +4,10 @@
 	font-family: "Pacifico", cursive;
 }
 
+.cor-titulo {
+	color: darkred;
+}
+
 .carrossel__imagem {
 	object-fit: cover;
 	object-position: 0 60%;
