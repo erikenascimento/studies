@@ -3,6 +3,7 @@ var criaController = function (jogo) {
 	var $lacunas = $(".lacunas");
 
 	var exibeLacunas = function () {
+		$lacunas.empty();
 		jogo.getLacunas().forEach(char => {
 			$lacunas.append(`<li class="lacuna"></li>`);
 		});
@@ -10,11 +11,11 @@ var criaController = function (jogo) {
 
 	var mudaPlaceHolder = function () {
 		$entrada.attr("placeholder", "Chute");
-		$entrada.val("");
 	};
 
 	var guardaPalavraSecreta = function () {
-		var palavraGuardada = $entrada.val();
+		jogo.setPalavraSecreta($entrada.val());
+		$entrada.val("");
 	};
 
 	var inicia = function () {
@@ -22,7 +23,7 @@ var criaController = function (jogo) {
 			if (event.which == 13) {
 				switch (jogo.getEtapa()) {
 					case 1:
-						jogo.setPalavraSecreta($entrada.val());
+						guardaPalavraSecreta();
 						exibeLacunas();
 						mudaPlaceHolder();
 						break;
