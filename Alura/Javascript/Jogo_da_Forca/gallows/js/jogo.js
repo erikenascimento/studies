@@ -23,7 +23,7 @@ var criaJogo = function (sprite) {
 	};
 
 	function estruturaLacuna(palavra) {
-		[...palavra].forEach(c => _lacunas.push(""));
+		[...palavra].forEach(char => _lacunas.push(""));
 	}
 
 	var processaChute = function (chute) {
