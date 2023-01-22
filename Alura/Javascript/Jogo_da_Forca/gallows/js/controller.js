@@ -5,8 +5,9 @@ var criaController = function (jogo) {
 	var exibeLacunas = function () {
 		$lacunas.empty();
 		jogo.getLacunas().forEach(char => {
-			$lacunas.append(`<li class="lacuna"></li>`);
+			$lacunas.append(`<li class="lacuna">${char}</li>`);
 		});
+		$entrada.val("");
 	};
 
 	var mudaPlaceHolder = function () {
@@ -15,11 +16,10 @@ var criaController = function (jogo) {
 
 	var guardaPalavraSecreta = function () {
 		jogo.setPalavraSecreta($entrada.val());
-		$entrada.val("");
 	};
 
 	var lerChute = function () {
-		// codigo
+		jogo.processaChute($entrada.val());
 	};
 
 	var inicia = function () {
@@ -33,6 +33,7 @@ var criaController = function (jogo) {
 						break;
 					case 2:
 						lerChute();
+						exibeLacunas();
 						break;
 				}
 			}
