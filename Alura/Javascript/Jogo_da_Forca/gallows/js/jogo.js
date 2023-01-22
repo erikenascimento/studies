@@ -1,9 +1,22 @@
 var criaJogo = function () {
-	var setPalavraSecreta = function (palavra) {};
+	var _etapa = 1;
+	var palavraSecreta = "";
+	var _lacunas = [];
 
-	var getLacunas = function () {};
+	var setPalavraSecreta = function (palavra) {
+		palavraSecreta = palavra;
+		[...palavra].forEach(c => _lacunas.push(""));
 
-	var getEtapa = function () {};
+		_etapa++;
+	};
+
+	var getLacunas = function () {
+		return _lacunas;
+	};
+
+	var getEtapa = function () {
+		return _etapa;
+	};
 
 	return {
 		setPalavraSecreta: setPalavraSecreta,
