@@ -10,8 +10,8 @@ var criaController = function (jogo) {
 		$entrada.val("");
 	};
 
-	var mudaPlaceHolder = function () {
-		$entrada.attr("placeholder", "Chute");
+	var mudaPlaceHolder = function (texto) {
+		$entrada.attr("placeholder", texto);
 	};
 
 	var guardaPalavraSecreta = function () {
@@ -21,13 +21,18 @@ var criaController = function (jogo) {
 	var lerChute = function () {
 		jogo.processaChute($entrada.val().trim().substr(0, 1));
 
-		if (jogo.ganhouOuPerdeu) {
-			if (jogo.ganhou()) {
-				alert("Você ganhou!");
-			} else if (jogo.perdeu()) {
-				alert("Voce perdeu!");
-			}
-			jogo.reinicia();
+		if (jogo.ganhouOuPerdeu()) {
+			setTimeout(() => {
+				if (jogo.ganhou()) {
+					alert("Você ganhou!");
+				} else if (jogo.perdeu()) {
+					alert("Voce perdeu!");
+				}
+
+				jogo.reinicia();
+				$lacunas.emtpy();
+				mudaPlaceHolder("Palavra secreta");
+			}, 200);
 		}
 	};
 
@@ -38,7 +43,7 @@ var criaController = function (jogo) {
 					case 1:
 						guardaPalavraSecreta();
 						exibeLacunas();
-						mudaPlaceHolder();
+						mudaPlaceHolder("Chute");
 						break;
 					case 2:
 						lerChute();
