@@ -15,24 +15,32 @@ var criaController = function (jogo) {
 	};
 
 	var guardaPalavraSecreta = function () {
-		jogo.setPalavraSecreta($entrada.val());
+		try {
+			jogo.setPalavraSecreta($entrada.val());
+		} catch (error) {
+			alert(error.message);
+		}
 	};
 
 	var lerChute = function () {
-		jogo.processaChute($entrada.val().trim().substr(0, 1));
+		try {
+			jogo.processaChute($entrada.val().trim().substr(0, 1));
 
-		if (jogo.ganhouOuPerdeu()) {
-			setTimeout(() => {
-				if (jogo.ganhou()) {
-					alert("Você ganhou!");
-				} else if (jogo.perdeu()) {
-					alert("Voce perdeu!");
-				}
+			if (jogo.ganhouOuPerdeu()) {
+				setTimeout(() => {
+					if (jogo.ganhou()) {
+						alert("Você ganhou!");
+					} else if (jogo.perdeu()) {
+						alert("Voce perdeu!");
+					}
 
-				jogo.reinicia();
-				$lacunas.emtpy();
-				mudaPlaceHolder("Palavra secreta");
-			}, 200);
+					jogo.reinicia();
+					$lacunas.emtpy();
+					mudaPlaceHolder("Palavra secreta");
+				}, 200);
+			}
+		} catch (error) {
+			alert(error.message);
 		}
 	};
 

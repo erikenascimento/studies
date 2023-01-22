@@ -27,6 +27,7 @@ var criaJogo = function (sprite) {
 	}
 
 	var processaChute = function (chute) {
+		if (!chute.trim()) throw Error("Chute inválido");
 		var regex = new RegExp(chute, "gi");
 		var letraExiste = false;
 
@@ -40,6 +41,7 @@ var criaJogo = function (sprite) {
 	};
 
 	var setPalavraSecreta = function (palavra) {
+		if (!palavra.trim()) throw Error("Palavra inválida");
 		palavraSecreta = palavra;
 		estruturaLacuna(palavra);
 
