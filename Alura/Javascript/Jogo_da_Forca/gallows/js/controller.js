@@ -18,6 +18,10 @@ var criaController = function (jogo) {
 		$entrada.val("");
 	};
 
+	var lerChute = function () {
+		// codigo
+	};
+
 	var inicia = function () {
 		$entrada.keypress(function (event) {
 			if (event.which == 13) {
@@ -28,7 +32,7 @@ var criaController = function (jogo) {
 						mudaPlaceHolder();
 						break;
 					case 2:
-						alert("etapa 2 - falta implementar");
+						lerChute();
 						break;
 				}
 			}
