@@ -3,6 +3,22 @@ var criaJogo = function (sprite) {
 	var palavraSecreta = "";
 	var _lacunas = [];
 
+	var ganhou = function () {
+		// para implementar
+	};
+
+	var perdeu = function () {
+		// para implementar
+	};
+
+	var ganhouOuPerdeu = function () {
+		// para implementar
+	};
+
+	var reinicia = function () {
+		// para implementar
+	};
+
 	var processaChute = function (chute) {
 		var regex = new RegExp(chute, "gi");
 		var letraExiste = false;
@@ -36,5 +52,9 @@ var criaJogo = function (sprite) {
 		getLacunas: getLacunas,
 		getEtapa: getEtapa,
 		processaChute: processaChute,
+		ganhou: ganhou,
+		perdeu: perdeu,
+		ganhou: ganhouOuPerdeu,
+		reinicia: reinicia,
 	};
 };
