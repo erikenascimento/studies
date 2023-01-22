@@ -19,7 +19,7 @@ var criaController = function (jogo) {
 	};
 
 	var lerChute = function () {
-		jogo.processaChute($entrada.val());
+		jogo.processaChute($entrada.val().trim().substr(0, 1));
 	};
 
 	var inicia = function () {
