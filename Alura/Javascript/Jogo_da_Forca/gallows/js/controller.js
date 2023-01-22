@@ -35,7 +35,7 @@ var criaController = function (jogo) {
 					}
 
 					jogo.reinicia();
-					$lacunas.emtpy();
+					$lacunas.empty();
 					mudaPlaceHolder("Palavra secreta");
 				}, 200);
 			}
