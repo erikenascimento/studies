@@ -4,7 +4,7 @@ var criaJogo = function (sprite) {
 	var _lacunas = [];
 
 	var ganhou = function () {
-		return _lacunas.join("") == palavraSecreta;
+		return !_lacunas.length ? false : _lacunas.join("") == palavraSecreta;
 	};
 
 	var perdeu = function () {
@@ -16,9 +16,10 @@ var criaJogo = function (sprite) {
 	};
 
 	var reinicia = function () {
+		_etapa = 1;
 		sprite.reset();
 		_lacunas = [];
-		estruturaLacuna(palavraSecreta);
+		palavraSecreta = "";
 	};
 
 	function estruturaLacuna(palavra) {
@@ -42,7 +43,7 @@ var criaJogo = function (sprite) {
 		palavraSecreta = palavra;
 		estruturaLacuna(palavra);
 
-		_etapa++;
+		_etapa = 2;
 	};
 
 	var getLacunas = function () {
