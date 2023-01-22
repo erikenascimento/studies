@@ -2,32 +2,18 @@ var criaJogo = function (sprite) {
 	var _etapa = 1;
 	var palavraSecreta = "";
 	var _lacunas = [];
-	var $sprite = $(sprite);
-
-	var numeroFrame = 1;
-	var mudaFrame = function (modificador) {
-		$sprite.toggleClass(`frame${numeroFrame - modificador}`);
-	};
-	var nextFrame = function () {
-		numeroFrame++;
-		if (numeroFrame <= 9) {
-			if (numeroFrame > 1) {
-				mudaFrame(1);
-			}
-			mudaFrame(0);
-		}
-	};
 
 	var processaChute = function (chute) {
-		if (palavraSecreta.includes(chute)) {
-			for (let index = 0; index < palavraSecreta.length; index++) {
-				if (palavraSecreta[index] == chute) {
-					_lacunas[index] = chute;
-				}
-			}
-		} else if (!palavraSecreta.includes(chute)) {
-			nextFrame();
-		} else console.log("erro, else");
+		var regex = new RegExp(chute, "gi");
+		var letraExiste = false;
+
+		while ((letraExiste = regex.exec(palavraSecreta))) {
+			_lacunas[letraExiste.index] = chute;
+		}
+
+		if (!palavraSecreta.includes(chute)) {
+			sprite.nextFrame();
+		}
 	};
 
 	var setPalavraSecreta = function (palavra) {
