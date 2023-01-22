@@ -20,6 +20,15 @@ var criaController = function (jogo) {
 
 	var lerChute = function () {
 		jogo.processaChute($entrada.val().trim().substr(0, 1));
+
+		if (jogo.ganhouOuPerdeu) {
+			if (jogo.ganhou()) {
+				alert("Você ganhou!");
+			} else if (jogo.perdeu()) {
+				alert("Voce perdeu!");
+			}
+			jogo.reinicia();
+		}
 	};
 
 	var inicia = function () {
