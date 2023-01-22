@@ -1,11 +1,10 @@
 function createSprite(seletorCSS) {
-	var sprite = {
+	const sprite = {
 		seletor: $(seletorCSS),
 		numeroFrame: 1,
-		mudaFrame: function (modificador) {
-			sprite.seletor.toggleClass(`frame${sprite.numeroFrame - modificador}`);
-		},
-		nextFrame: function () {
+		mudaFrame: modificador =>
+			sprite.seletor.toggleClass(`frame${sprite.numeroFrame - modificador}`),
+		nextFrame: () => {
 			sprite.numeroFrame++;
 			if (sprite.numeroFrame <= 9) {
 				if (sprite.numeroFrame > 1) {
@@ -14,14 +13,14 @@ function createSprite(seletorCSS) {
 				sprite.mudaFrame(0);
 			}
 		},
-		isFinished: function () {
+		isFinished: () => {
 			if (sprite.numeroFrame >= 9) {
 				return true;
 			} else {
 				return false;
 			}
 		},
-		reset: function () {
+		reset: () => {
 			sprite.mudaFrame(0);
 			sprite.numeroFrame = 1;
 		},

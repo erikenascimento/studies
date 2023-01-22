@@ -1,21 +1,16 @@
-var criaJogo = function (sprite) {
-	var _etapa = 1;
-	var palavraSecreta = "";
-	var _lacunas = [];
+const criaJogo = sprite => {
+	let _etapa = 1;
+	let palavraSecreta = "";
+	let _lacunas = [];
 
-	var ganhou = function () {
-		return !_lacunas.length ? false : _lacunas.join("") == palavraSecreta;
-	};
+	const ganhou = () =>
+		!_lacunas.length ? false : _lacunas.join("") == palavraSecreta;
 
-	var perdeu = function () {
-		return sprite.isFinished();
-	};
+	const perdeu = () => sprite.isFinished();
 
-	var ganhouOuPerdeu = function () {
-		return ganhou() || perdeu();
-	};
+	const ganhouOuPerdeu = () => ganhou() || perdeu();
 
-	var reinicia = function () {
+	const reinicia = () => {
 		_etapa = 1;
 		sprite.reset();
 		_lacunas = [];
@@ -26,10 +21,10 @@ var criaJogo = function (sprite) {
 		[...palavra].forEach(char => _lacunas.push(""));
 	}
 
-	var processaChute = function (chute) {
+	const processaChute = chute => {
 		if (!chute.trim()) throw Error("Chute inválido");
-		var regex = new RegExp(chute, "gi");
-		var letraExiste = false;
+		const regex = new RegExp(chute, "gi");
+		let letraExiste = false;
 
 		while ((letraExiste = regex.exec(palavraSecreta))) {
 			_lacunas[letraExiste.index] = chute;
@@ -40,7 +35,7 @@ var criaJogo = function (sprite) {
 		}
 	};
 
-	var setPalavraSecreta = function (palavra) {
+	const setPalavraSecreta = palavra => {
 		if (!palavra.trim()) throw Error("Palavra inválida");
 		palavraSecreta = palavra;
 		estruturaLacuna(palavra);
@@ -48,22 +43,18 @@ var criaJogo = function (sprite) {
 		_etapa = 2;
 	};
 
-	var getLacunas = function () {
-		return _lacunas;
-	};
+	const getLacunas = () => _lacunas;
 
-	var getEtapa = function () {
-		return _etapa;
-	};
+	const getEtapa = () => _etapa;
 
 	return {
-		setPalavraSecreta: setPalavraSecreta,
-		getLacunas: getLacunas,
-		getEtapa: getEtapa,
-		processaChute: processaChute,
-		ganhou: ganhou,
-		perdeu: perdeu,
-		ganhouOuPerdeu: ganhouOuPerdeu,
-		reinicia: reinicia,
+		setPalavraSecreta,
+		getLacunas,
+		getEtapa,
+		processaChute,
+		ganhou,
+		perdeu,
+		ganhouOuPerdeu,
+		reinicia,
 	};
 };
