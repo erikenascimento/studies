@@ -4,20 +4,26 @@ var criaJogo = function (sprite) {
 	var _lacunas = [];
 
 	var ganhou = function () {
-		// para implementar
+		return _lacunas.join("") == palavraSecreta;
 	};
 
 	var perdeu = function () {
-		// para implementar
+		return sprite.isFinished();
 	};
 
 	var ganhouOuPerdeu = function () {
-		// para implementar
+		return ganhou() || perdeu();
 	};
 
 	var reinicia = function () {
-		// para implementar
+		sprite.reset();
+		_lacunas = [];
+		estruturaLacuna(palavraSecreta);
 	};
+
+	function estruturaLacuna(palavra) {
+		[...palavra].forEach(c => _lacunas.push(""));
+	}
 
 	var processaChute = function (chute) {
 		var regex = new RegExp(chute, "gi");
@@ -34,7 +40,7 @@ var criaJogo = function (sprite) {
 
 	var setPalavraSecreta = function (palavra) {
 		palavraSecreta = palavra;
-		[...palavra].forEach(c => _lacunas.push(""));
+		estruturaLacuna(palavra);
 
 		_etapa++;
 	};
@@ -54,7 +60,7 @@ var criaJogo = function (sprite) {
 		processaChute: processaChute,
 		ganhou: ganhou,
 		perdeu: perdeu,
-		ganhou: ganhouOuPerdeu,
+		ganhouOuPerdeu: ganhouOuPerdeu,
 		reinicia: reinicia,
 	};
 };
