@@ -5,8 +5,8 @@ class CampoTexto extends Component {
 	render() {
 		return (
 			<div className="campo-texto">
-				<label>Nome</label>
-				<input placeholder="Digite o seu nome" />
+				<label>{this.props.label}</label>
+				<input placeholder={this.props.placeholder} />
 			</div>
 		);
 	}
