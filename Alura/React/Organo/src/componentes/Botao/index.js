@@ -1,10 +1,9 @@
-import React, { Component } from "react";
-import "./Botao.css";
+import './Botao.css'
 
-class Botao extends Component {
-	render() {
-		return <button className="botao">{this.props.children}</button>;
-	}
+const Botao = (props) => {
+    return (<button className='botao'>
+        {props.children}
+    </button>)
 }
 
-export default Botao;
+export default Botao

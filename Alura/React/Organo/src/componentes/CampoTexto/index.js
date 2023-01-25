@@ -1,18 +1,21 @@
-import React, { Component } from "react";
-import "./CampoTexto.css";
+import './CampoTexto.css'
 
-class CampoTexto extends Component {
-	render() {
-		return (
-			<div className="campo-texto">
-				<label>{this.props.label}</label>
-				<input
-					required={this.props.required}
-					placeholder={this.props.placeholder}
-				/>
-			</div>
-		);
-	}
+const CampoTexto = (props) => {
+
+    const placeholderModificada = `${props.placeholder}...` 
+
+    const aoDigitado = (evento) => {
+        props.aoAlterado(evento.target.value)
+    }
+
+    return (
+        <div className="campo-texto">
+            <label>
+                {props.label}
+            </label>
+            <input value={props.valor} onChange={aoDigitado} required={props.obrigatorio} placeholder={placeholderModificada}/>
+        </div>
+    )
 }
 
-export default CampoTexto;
+export default CampoTexto
