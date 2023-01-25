@@ -6,7 +6,10 @@ class CampoTexto extends Component {
 		return (
 			<div className="campo-texto">
 				<label>{this.props.label}</label>
-				<input placeholder={this.props.placeholder} />
+				<input
+					required={this.props.required}
+					placeholder={this.props.placeholder}
+				/>
 			</div>
 		);
 	}
