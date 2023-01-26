@@ -1,7 +1,7 @@
 import Colaborador from "../Colaborador";
 import "./time.css";
 
-const Time = ({ time, colaboradores, aoDeletar }) => {
+const Time = ({ time, colaboradores, aoDeletar, mudarCor }) => {
 	return (
 		colaboradores.length > 0 && (
 			<section
@@ -13,8 +13,9 @@ const Time = ({ time, colaboradores, aoDeletar }) => {
 			>
 				<input
 					type="color"
+					value={time.corSecundaria}
+					onChange={evento => mudarCor(evento.target.value, time.nome)}
 					className="time__cor"
-					value={time.corPrimaria}
 				></input>
 				<h3 style={{ borderColor: time.corSecundaria }}>{time.nome}</h3>
 				<div className="colaboradores">
