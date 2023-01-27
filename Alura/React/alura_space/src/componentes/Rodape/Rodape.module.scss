@@ -1,26 +1,28 @@
-@import '../../styles/variaveis';
+@import "../../styles/variaveis";
 
 .rodape {
-    // Flex
-    align-items: center;
+  background-color: $azul-rodape;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  box-shadow: 0px -2px 30px rgba($color: #000000, $alpha: 0.5);
+  box-sizing: border-box;
+
+  &__icones {
+    width: 10%;
     display: flex;
     justify-content: space-between;
-    // Sizing
-    height: 80px;
-    width: 100vw;
-    // Color
-    background-color: $azul-escuro;
-}
+    cursor: pointer;
+  }
 
-.rodape__lista {
-    align-items: center;
-    display: flex;
-    gap: 1.2rem;
-    list-style-type: none;
-}
-
-.rodape__texto {
+  p {
+    margin: 0;
     color: $cor-do-texto;
     font-family: $fonte-normal;
-    padding-right: 2vw;
+  }
 }
