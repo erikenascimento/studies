@@ -1,0 +1,26 @@
+@import '../../styles/variaveis';
+
+.rodape {
+    // Flex
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    // Sizing
+    height: 80px;
+    width: 100vw;
+    // Color
+    background-color: $azul-escuro;
+}
+
+.rodape__lista {
+    align-items: center;
+    display: flex;
+    gap: 1.2rem;
+    list-style-type: none;
+}
+
+.rodape__texto {
+    color: $cor-do-texto;
+    font-family: $fonte-normal;
+    padding-right: 2vw;
+}
