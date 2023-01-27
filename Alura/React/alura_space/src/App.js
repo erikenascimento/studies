@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+import PaginaInicial from "./Components/Pagina_Inicial";
 
 export default class App extends Component {
 	render() {
-		return <h1>Alura Space</h1>;
+		return <PaginaInicial />;
 	}
 }
