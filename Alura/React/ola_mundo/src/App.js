@@ -1,15 +1,10 @@
 import React, { Component } from "react";
+import Inicio from "./paginas/inicio";
+import SobreMim from "./paginas/SobreMim";
 
 export default class App extends Component {
 	render() {
-		return (
-			<div style={{ textAlign: "center" }}>
-				<h1>Ay Lmao</h1>
-				<img
-					src="https://media.tenor.com/_LOm-JCkWncAAAAi/alienpls.gif"
-					alt="I can't believe my fucking eyes"
-				/>
-			</div>
-		);
+		const pagina = window.location.pathname === "/" ? <Inicio /> : <SobreMim />;
+		return pagina;
 	}
 }
