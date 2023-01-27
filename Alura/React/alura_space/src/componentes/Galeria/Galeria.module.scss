@@ -1,16 +1,7 @@
 @import "../../styles/variaveis";
 
 .galeria {
-  // Flex
-  align-items: flex-start;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  // Dimensioning
-  margin-top: 1rem;
   margin-bottom: 2rem;
-  margin-left: 17%;
-  // Typography
   font-family: $fonte-normal;
 
   h2 {
