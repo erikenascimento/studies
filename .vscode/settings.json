@@ -1,4 +1,5 @@
 {
+    "scss.lint.unknownAtRules": "ignore",
     "turboConsoleLog.delimiterInsideMessage": "",
     "turboConsoleLog.includeFileNameAndLineNum": false,
     "turboConsoleLog.insertEnclosingFunction": false,
