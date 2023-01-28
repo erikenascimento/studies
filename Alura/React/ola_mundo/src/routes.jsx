@@ -1,5 +1,6 @@
 import PaginaPadrao from "components/PaginaPadrao";
 import Rodape from "components/Rodape";
+import NaoEncontrada from "paginas/NaoEncontrada";
 import Post from "paginas/Post";
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -17,7 +18,7 @@ export default function AppRoutes() {
 					<Route path="sobremim" element={<SobreMim />} />
 					<Route path="posts/:id" element={<Post />} />
 				</Route>
-				<Route path="*" element={<h1>Not Found</h1>} />
+				<Route path="*" element={<NaoEncontrada />} />
 			</Routes>
 			<Rodape />
 		</BrowserRouter>
