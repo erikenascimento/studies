@@ -4,7 +4,7 @@ import Menu from "./components/Menu";
 import Inicio from "./paginas/inicio";
 import SobreMim from "./paginas/SobreMim";
 
-export default function App() {
+export default function AppRoutes() {
 	return (
 		<BrowserRouter>
 			<Menu />
