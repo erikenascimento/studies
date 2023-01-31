@@ -3,6 +3,7 @@ import Feira from "pages/Feira";
 import Login from "pages/Login";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { useState } from "react";
+import { UsuarioContext } from "common/context/Usuario";
 
 export default function Router() {
 	const [nome, setNome] = useState("");
@@ -11,12 +12,9 @@ export default function Router() {
 		<BrowserRouter>
 			<Switch>
 				<Route exact path="/">
-					<Login
-						nome={nome}
-						setNome={setNome}
-						saldo={saldo}
-						setSaldo={setSaldo}
-					/>
+					<UsuarioContext.Provider value={{ nome, setNome, saldo, setSaldo }}>
+						<Login />
+					</UsuarioContext.Provider>
 				</Route>
 				<Route path="/feira">
 					<Feira />
