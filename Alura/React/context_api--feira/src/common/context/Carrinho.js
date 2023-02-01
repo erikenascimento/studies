@@ -1,4 +1,5 @@
 import { createContext, useState, useContext, useEffect } from "react";
+import { usePagamentoContext } from "./Pagamento";
 
 export const CarrinhoContext = createContext();
 CarrinhoContext.displayName = "Carrinho";
@@ -33,6 +34,8 @@ export const useCarrinhoContext = () => {
 		valorTotalCarrinho,
 		setValorTotalCarrinho,
 	} = useContext(CarrinhoContext);
+
+	const { formaPagamento } = usePagamentoContext;
 
 	function mudarQuantidade(id, quantidade) {
 		return carrinho.map(itemDoCarrinho => {
@@ -78,8 +81,8 @@ export const useCarrinhoContext = () => {
 			}
 		);
 		setQuantidadeProdutos(novaQuantidade);
-		setValorTotalCarrinho(novoTotal);
-	}, [carrinho, setQuantidadeProdutos, setValorTotalCarrinho]);
+		setValorTotalCarrinho(novoTotal * formaPagamento.juros);
+	}, [carrinho, setQuantidadeProdutos, setValorTotalCarrinho, formaPagamento]);
 
 	return {
 		carrinho,
