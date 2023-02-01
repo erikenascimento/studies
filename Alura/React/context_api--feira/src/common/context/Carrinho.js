@@ -11,3 +11,12 @@ export const CarrinhoProvider = ({ children }) => {
 		</CarrinhoContext.Provider>
 	);
 };
+
+export const useCarrinhoContext = () => {
+	const { carrinho, setCarrinho } = useContext(CarrinhoContext);
+
+	return {
+		carrinho,
+		setCarrinho,
+	};
+};
