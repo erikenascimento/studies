@@ -10,7 +10,7 @@ import { useCarrinhoContext } from "common/context/Carrinho";
 import { usePagamentoContext } from "common/context/Pagamento";
 import { UsuarioContext } from "common/context/Usuario";
 import Produto from "components/Produto";
-import { useContext, useState } from "react";
+import { useContext, useMemo, useState } from "react";
 import { useHistory } from "react-router-dom";
 import {
 	Container,
@@ -28,7 +28,10 @@ function Carrinho() {
 		usePagamentoContext();
 
 	const history = useHistory();
-	const total = saldo - valorTotalCarrinho;
+	const total = useMemo(
+		() => saldo - valorTotalCarrinho,
+		[saldo, valorTotalCarrinho]
+	);
 
 	return (
 		<Container>
