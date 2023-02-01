@@ -57,5 +57,6 @@ export const usePagamentoContext = () => {
 	return {
 		tiposPagamento,
 		formaPagamento,
+		mudarFormaPagamento,
 	};
 };
