@@ -1,0 +1,18 @@
+.rodape {
+    // Flex
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    // Styles
+    background-color: black;
+    // Dimensioning
+    height: 88px;
+    width: 100vw;
+}
+
+.rodape > h5 {
+    // Styles
+    color: white;
+    // Typography
+    font-size: 18px;
+}
