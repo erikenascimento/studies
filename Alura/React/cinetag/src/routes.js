@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Cabecalho from "components/Cabecalho";
 import Rodape from "components/Rodape";
 import Container from "components/Container";
-import FavoritosProvider from "contexts";
+import FavoritosProvider from "contexts/Favoritos";
 
 export default function AppRoutes() {
 	return (
