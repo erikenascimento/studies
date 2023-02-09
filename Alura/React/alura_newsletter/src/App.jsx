@@ -1,5 +1,5 @@
 import React from "react";
-import Cabecalho from "./components/Cabecalho/Cabecalho";
+import Cabecalho from "./components/Cabecalho/cabecalho";
 
 const App = () => {
 	return <Cabecalho />;
