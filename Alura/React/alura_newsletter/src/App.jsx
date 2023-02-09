@@ -1,7 +1,5 @@
 import Cabecalho from "./components/Cabecalho/cabecalho";
 
-const App = () => {
+export default function App() {
 	return <Cabecalho />;
-};
-
-export default App;
+}
