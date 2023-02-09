@@ -1,7 +1,8 @@
 import React from "react";
+import Cabecalho from "./components/Cabecalho/Cabecalho";
 
 const App = () => {
-	return <h1>Ay Lmao</h1>;
+	return <Cabecalho />;
 };
 
 export default App;
