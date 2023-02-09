@@ -1,4 +1,4 @@
-import ToggleTheme from "../ToggleTheme/toggleTheme";
+import ToggleTheme from "../ToggleTheme/ToggleTheme";
 
 export default function Cabecalho() {
 	return (
