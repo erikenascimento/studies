@@ -7,10 +7,18 @@ export default function Form({ onSubmit }) {
 		onSubmit({ name, email });
 	};
 	return (
-		<form onSubmit={safeSubmit}>
+		<form
+			onSubmit={safeSubmit}
+			className="h-full flex flex-col items-center justify-center gap-10 -mt-20"
+		>
 			<input type="text" placeholder="Insira seu nome:" />
 			<input type="email" placeholder="Insira seu e-mail:" />
-			<button type="submit">Seguir</button>
+			<button
+				type="submit"
+				className="py-1 px-5 bg-alura-100 dark:bg-dark-200 rounded-full text-gray-200"
+			>
+				Seguir
+			</button>
 		</form>
 	);
 }
