@@ -1,5 +1,5 @@
-import Cabecalho from "./components/Cabecalho/Cabecalho";
 import { useState } from "react";
+import Header from "./components/Header/Header";
 import ArticleList from "./components/ArticleList/ArticleList";
 import Form from "./components/Form/Form";
 
@@ -8,7 +8,7 @@ export default function App() {
 	const hasUser = Boolean(user);
 	return (
 		<div className="h-screen">
-			<Cabecalho user={user} />;{hasUser && <ArticleList />}
+			<Header user={user} />;{hasUser && <ArticleList />}
 			{hasUser || <Form onSubmit={setUser} />}
 		</div>
 	);
