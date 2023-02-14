@@ -6,10 +6,7 @@ export default function Article({ title, text, tags, image, alt }) {
 			</h3>
 			<div className="w-full flex justify-end gap-2 pr-5 hidden sm:flex">
 				{tags.map(tag => (
-					<span
-						key={tag}
-						className="bg-alura-100 dark:bg-dark-100 px-3 py-1 rounded-full text-gray-200 dark:text-gray-400 text-xs uppercase font-bold hover:bg-alura-200 hover:scale-110"
-					>
+					<span key={tag} className="alura-tag">
 						{tag}
 					</span>
 				))}
