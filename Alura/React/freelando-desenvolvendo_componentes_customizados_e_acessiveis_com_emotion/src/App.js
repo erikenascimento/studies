@@ -1,10 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { GlobalStyles } from "./components/GlobalStyles/Styles";
 import { Card } from "./components/Card/Card";
 import { ThemeProviderComp } from "./components/ThemeProvider/ThemeProvider";
 import { Navbar } from "./components/Navbar/Navbar";
-import { NavMenu } from "./components/NavMenu/NavMenu";
+import { Typography } from "./components/Typography/Typography";
 
 function App() {
 	return (
@@ -12,7 +11,14 @@ function App() {
 			<GlobalStyles />
 			<Navbar />
 			<Card>
-				<h1>Freelando</h1>
+				<Typography variant="h1" component="h1">
+					Crie seu cadastro.
+				</Typography>
+				<Typography variant="body" component="body">
+					Crie seu perfil gratuitamente para começar a trabalhar com os melhores
+					freelancers. Em seguida, você poderá dar mais detalhes sobre suas
+					demandas e sobre sua forma de trabalho.
+				</Typography>
 			</Card>
 		</ThemeProviderComp>
 	);
