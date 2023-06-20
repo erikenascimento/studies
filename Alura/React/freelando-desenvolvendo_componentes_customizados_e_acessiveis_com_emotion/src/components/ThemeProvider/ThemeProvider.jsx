@@ -6,12 +6,12 @@ const theme = {
 		warning: "",
 		focus: "",
 		primary: {
-			a: "",
+			a: "#5754ED",
 			b: "",
 			c: "",
 		},
 		secondary: {
-			a: "",
+			a: "#EBEAF9",
 			b: "",
 			c: "",
 		},
@@ -25,6 +25,10 @@ const theme = {
 			a: "",
 			b: "",
 		},
+	},
+	spacing: {
+		s: "16px",
+		l: "32px",
 	},
 };
 
