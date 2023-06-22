@@ -5,6 +5,7 @@ import { ThemeProviderComp } from "./components/ThemeProvider/ThemeProvider";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Typography } from "./components/Typography/Typography";
 import { InputText } from "./components/InputText/InputText";
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
 	return (
@@ -22,6 +23,7 @@ function App() {
 				</Typography>
 				<InputText label="Nome Completo" />
 			</Card>
+			<Footer />
 		</ThemeProviderComp>
 	);
 }
