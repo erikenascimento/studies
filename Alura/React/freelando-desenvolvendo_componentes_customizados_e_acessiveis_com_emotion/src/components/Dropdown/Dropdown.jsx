@@ -53,6 +53,13 @@ export const Dropdown = ({ label, options }) => {
 					<span>{isOpen ? "▲" : "▼"}</span>
 				</div>
 			</StyledButton>
+			{isOpen && (
+				<ul>
+					{options.map(option => (
+						<li key={option.value}>{option.text}</li>
+					))}
+				</ul>
+			)}
 		</StyledLabel>
 	);
 };
