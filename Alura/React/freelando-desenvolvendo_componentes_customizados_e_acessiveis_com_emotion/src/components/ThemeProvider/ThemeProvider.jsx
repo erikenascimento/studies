@@ -15,8 +15,8 @@ const theme = {
 			b: "",
 			c: "",
 		},
-		neutrals: {
-			a: "",
+		neutral: {
+			a: "#373737",
 			b: "",
 			c: "",
 			d: "",
@@ -27,6 +27,7 @@ const theme = {
 		},
 	},
 	spacing: {
+		xs: "8px",
 		s: "16px",
 		l: "32px",
 	},
