@@ -7,13 +7,14 @@ import { Typography } from "./components/Typography/Typography";
 import { InputText } from "./components/InputText/InputText";
 import { Footer } from "./components/Footer/Footer";
 import { Col, Container, Row } from "react-grid-system";
+import { Dropdown } from "./components/Dropdown/Dropdown";
 
 function App() {
 	return (
 		<ThemeProviderComp className="App">
 			<GlobalStyles />
 			<Navbar />
-			<Container>
+			<Container style={{ margin: "80px 0" }}>
 				<Row justify="center">
 					<Col lg={6} md={8} sm={12}>
 						<Card>
@@ -32,7 +33,7 @@ function App() {
 							</Row>
 							<Row>
 								<Col lg={4} md={4} sm={4}>
-									<InputText label="Estado" />
+									<Dropdown label="Estado" />
 								</Col>
 								<Col lg={8} md={8} sm={8}>
 									<InputText label="Cidade" />
@@ -45,10 +46,10 @@ function App() {
 							</Row>
 							<Row>
 								<Col lg={6} md={6} sm={6}>
-									<InputText label="Estado" />
+									<InputText label="Senha" />
 								</Col>
 								<Col lg={6} md={6} sm={6}>
-									<InputText label="Cidade" />
+									<InputText label="Repita a Senha" />
 								</Col>
 							</Row>
 						</Card>
