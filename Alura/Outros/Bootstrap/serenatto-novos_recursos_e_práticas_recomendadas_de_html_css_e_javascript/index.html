@@ -206,7 +206,7 @@
 				<h2 class="fw-bold text-center pb-1">Nossos Produtos</h2>
 				<div class="row">
 					<div class="col-12 col-md-6 col-xl-4">
-						<div class="card border-0 btn mx-auto" style="width: 18rem">
+						<div class="card border-0 btn mx-auto" data-bs-toggle="modal" data-bs-target="#modalCafePreto" style="width: 18rem">
 							<img
 								src="./assets/produtos-cafe-tradicional.png"
 								class="card-img-top"
@@ -220,7 +220,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-6 col-xl-4">
-						<div class="card border-0 btn mx-auto" style="width: 18rem">
+						<div class="card border-0 btn mx-auto" data-bs-toggle="modal" data-bs-target="#modalCafeEspecial" style="width: 18rem">
 							<img
 								src="./assets/produtos-cafe-especial.png"
 								class="card-img-top"
@@ -234,7 +234,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-6 col-xl-4">
-						<div class="card border-0 btn mx-auto" style="width: 18rem">
+						<div class="card border-0 btn mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 18rem">
 							<img
 								src="./assets/produtos-vitaminas.png"
 								class="card-img-top"
@@ -248,7 +248,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-6 col-xl-4">
-						<div class="card border-0 btn mx-auto" style="width: 18rem">
+						<div class="card border-0 btn mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 18rem">
 							<img
 								src="./assets/produtos-paes.png"
 								class="card-img-top"
@@ -262,7 +262,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-6 col-xl-4">
-						<div class="card border-0 btn mx-auto" style="width: 18rem">
+						<div class="card border-0 btn mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 18rem">
 							<img
 								src="./assets/produtos-doces.png"
 								class="card-img-top"
@@ -276,7 +276,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-6 col-xl-4">
-						<div class="card border-0 btn mx-auto" style="width: 18rem">
+						<div class="card border-0 btn mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 18rem">
 							<img
 								src="./assets/produtos-salgados.png"
 								class="card-img-top"
@@ -401,7 +401,6 @@
 				</div>
 			</div>
 		</div>
-
 		<!-- canvas 2 -->
 		<div
 			class="offcanvas offcanvas-end"
@@ -471,7 +470,6 @@
 				</div>
 			</div>
 		</div>
-
 		<!-- canvas 3 -->
 		<div
 			class="offcanvas offcanvas-end"
@@ -542,6 +540,46 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- modal 1 -->
+		<div class="modal fade" id="modalCafePreto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Cafés Tradicionais</h2>
+				  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<img class="w-100" src="./assets/produtos-cafe-tradicional.png" alt="Xícara de café preto">
+					<p>O café Serenatto é conhecido por seus blends tradicionais e saborosos, que agradam aos amantes da bebida. Nossos grãos são cuidadosamente selecionados e torrados para produzir um aroma rico e sabor equilibrado.</p>
+					<p>Entre os cafés mais tradicionais da casa, destaca-se o "Café Serenatto", um blend exclusivo de grãos com notas de chocolate e caramelo. Outra opção popular é o "Café Italiano", um café expresso encorpado e intenso. Já o "Café Cappuccino" é uma escolha clássica para quem prefere uma bebida cremosa e suave.</p>
+				</div>
+				<div class="modal-footer mx-auto">
+				  <button type="button" class="btn botao--padrao border-0" data-bs-dismiss="modal">Fechar Janela</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		<!-- modal 2 -->
+		<div class="modal fade" id="modalCafeEspecial" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Cafés Especiais</h2>
+				  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<img class="w-100" src="./assets/produtos-cafe-especial.png" alt="Xícara de café preto">
+					<p>Somos conhecidos também por nossos cafés especiais, que são cuidadosamente preparados com grãos selecionados de alta qualidade e técnicas de preparo precisas.</p>
+					<p>Entre as opções de cafés especiais do Café & Bistrô Serenatto, destacamos o café aeropress, que é preparado com uma técnica de imersão e pressão, resultando em uma bebida de sabor intenso e aroma acentuado. Outra opção popular é o café Hario V60, que é preparado com um filtro de papel em formato de cone e resulta em uma bebida limpa e suave, ressaltando as notas sensoriais dos grãos. Além disso, oferecemos uma variedade de bebidas geladas, como o café gelado, que é preparado com grãos torrados escuros e servido com gelo e leite, resultando em uma bebida refrescante e saborosa.</p>
+				</div>
+				<div class="modal-footer mx-auto">
+				  <button type="button" class="btn botao--padrao border-0" data-bs-dismiss="modal">Fechar Janela</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
