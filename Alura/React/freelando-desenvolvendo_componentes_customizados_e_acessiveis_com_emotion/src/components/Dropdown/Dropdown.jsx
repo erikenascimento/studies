@@ -12,6 +12,7 @@ const StyledDropdownItem = styled.li`
 	&:last-child {
 		border: none;
 	}
+	color: ${props => (props.activeFocus ? props.theme.colors.focus : "inherit")};
 	&:hover {
 		color: ${props => props.theme.colors.focus};
 	}
@@ -79,19 +80,63 @@ const StyledButton = styled.button`
 export const Dropdown = ({ label, options }) => {
 	const [isOpen, toggleVisibility] = useState(false);
 
+	const [focusedOption, setFocusedOption] = useState(null);
+	const [selectedOption, setSelectedOption] = useState(null);
+
+	const useKeyDown = event => {
+		toggleVisibility(true);
+		switch (event.key) {
+			case "ArrowDown":
+				event.preventDefault();
+				setFocusedOption(previousFocus => {
+					if (previousFocus == null) {
+						return 0;
+					}
+					return (previousFocus += 1);
+				});
+				break;
+			case "ArrowUp":
+				event.preventDefault();
+				setFocusedOption(previousFocus => {
+					if (!previousFocus) {
+						return 0;
+					}
+					return (previousFocus -= 1);
+				});
+				break;
+			case "Enter":
+				event.preventDefault();
+				setFocusedOption(null);
+				toggleVisibility(false);
+				setSelectedOption(options(focusedOption));
+				break;
+
+			default:
+				break;
+		}
+	};
+
 	return (
 		<StyledLabel>
 			{label}
-			<StyledButton isOpen={isOpen} onClick={() => toggleVisibility(!isOpen)}>
-				<div>Selecione</div>
+			<StyledButton
+				isOpen={isOpen}
+				onClick={() => toggleVisibility(!isOpen)}
+				onKeyDown={useKeyDown}
+			>
+				<div>{selectedOption ? selectedOption.text : "Selecione"}</div>
 				<div>
 					<span>{isOpen ? "▲" : "▼"}</span>
 				</div>
 			</StyledButton>
 			{isOpen && (
 				<StyledDropdown>
-					{options.map(option => (
-						<StyledDropdownItem key={option.value}>
+					{options.map((option, index) => (
+						<StyledDropdownItem
+							key={option.value}
+							activeFocus={index === focusedOption}
+							onClick={() => setSelectedOption(option)}
+						>
 							{option.text}
 						</StyledDropdownItem>
 					))}
