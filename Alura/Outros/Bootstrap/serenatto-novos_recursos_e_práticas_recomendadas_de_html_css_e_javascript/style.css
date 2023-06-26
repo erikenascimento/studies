@@ -18,3 +18,20 @@ input[type="checkbox"]:focus {
 	box-shadow: none;
 	outline: none;
 }
+
+.banners {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+}
+
+.banner--1 {
+	background-image: url(./assets/banner-1.png);
+}
+
+.banners__titulo {
+	--bs-bg-opacity: 0.2;
+}
