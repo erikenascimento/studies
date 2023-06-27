@@ -65,3 +65,20 @@ input[type="checkbox"]:focus {
 .bg--marromClaro {
 	background-color: var(--marrom-claro);
 }
+
+[data-bs-theme="dark"] {
+	color: white;
+	.nav-link {
+		--bs-nav-link-color: white;
+	}
+	.card-body {
+		--bs-card-color: white;
+	}
+	.offcanvas {
+		--bas-offcanvas-color: white;
+	}
+	.accordion,
+	.btn {
+		--bs-body-color: white;
+	}
+}
