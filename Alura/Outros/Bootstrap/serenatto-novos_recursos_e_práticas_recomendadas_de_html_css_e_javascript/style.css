@@ -2,6 +2,7 @@ body {
 	--bege: #e6e0d6;
 	--marrom-escuro: #816d4f;
 	--marrom-claro: #b29463;
+	--marrom-rodape: #303829;
 
 	font-family: "Barlow", sans-serif;
 }
@@ -55,4 +56,12 @@ input[type="checkbox"]:focus {
 
 .botao--padrao:hover {
 	background-color: var(--marrom-escuro);
+}
+
+.rodapeTexto {
+	color: var(--marrom-rodape);
+}
+
+.bg--marromClaro {
+	background-color: var(--marrom-claro);
 }
