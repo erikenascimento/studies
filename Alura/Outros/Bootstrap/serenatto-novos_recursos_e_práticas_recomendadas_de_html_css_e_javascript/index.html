@@ -73,7 +73,7 @@
 									<a class="nav-link" href="#">Sobre</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">Contato</a>
+									<a class="nav-link" href="#contactus">Contato</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="#"
@@ -303,6 +303,45 @@
 						saepe rem deleniti quo ipsum, atque quas vel repudiandae at. Quasi,
 						voluptate?
 					</p>
+				</div>
+			</section>
+			<!-- formulario -->
+			<section class="py-4 container">
+				<div class="row">
+					<div class="col-10 col-xl-8 mx-auto">
+						<div class="border border-2 rounded p-3">
+							<h3 class="fw-bold p-3">Entre em contato!</h3>
+							<form id="contactus">
+								<div class="form-floating mb-3">
+									<input type="text" class="form-control" id="floatingName" placeholder="Nome">
+									<label for="floatingName">Nome</label>
+								  </div>
+								  <div class="form-floating mb-3">
+									<input type="email" class="form-control" id="floatingEmail" placeholder="nome@exemplo.com">
+									<label for="floatingEmail">E-mail</label>
+								  </div>
+								  <div class="form-floating mb-3">
+									<input type="number" class="form-control" id="floatingPhone" placeholder="Telefone">
+									<label for="floatingPhone">Telefone</label>
+								  </div>
+								  <select class="form-select mb-3" aria-label="Default select example">
+									<option selected>Preferencia de contato:</option>
+									<option value="1">Whatsapp</option>
+									<option value="2">Email</option>
+									<option value="3">Ligação</option>
+								  </select>
+								  <label for="satisfactionLevel" class="form-label">Nível de satisfação:</label>
+								  <input type="range" class="form-range inputRange" id="satisfactionLevel">
+								  <div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+									<label class="form-check-label" for="flexCheckDefault">
+									  Deseja receber novidades por email?
+									</label>
+								  </div>
+								  <button type="button" class="btn botao--padrao w-100 p-3 fw-bold mt-3 py-3">Enviar</button>
+							</form>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -542,43 +581,43 @@
 		</div>
 
 		<!-- modal 1 -->
-		<div class="modal fade" id="modalCafePreto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<article class="modal fade" id="modalCafePreto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 			  <div class="modal-content">
-				<div class="modal-header">
+				<header class="modal-header">
 				  <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Cafés Tradicionais</h2>
 				  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
+				</header>
+				<section class="modal-body">
 					<img class="w-100" src="./assets/produtos-cafe-tradicional.png" alt="Xícara de café preto">
 					<p>O café Serenatto é conhecido por seus blends tradicionais e saborosos, que agradam aos amantes da bebida. Nossos grãos são cuidadosamente selecionados e torrados para produzir um aroma rico e sabor equilibrado.</p>
 					<p>Entre os cafés mais tradicionais da casa, destaca-se o "Café Serenatto", um blend exclusivo de grãos com notas de chocolate e caramelo. Outra opção popular é o "Café Italiano", um café expresso encorpado e intenso. Já o "Café Cappuccino" é uma escolha clássica para quem prefere uma bebida cremosa e suave.</p>
-				</div>
-				<div class="modal-footer mx-auto">
+				</section>
+				<footer class="modal-footer mx-auto">
 				  <button type="button" class="btn botao--padrao border-0" data-bs-dismiss="modal">Fechar Janela</button>
-				</div>
+				</footer>
 			  </div>
 			</div>
-		  </div>
+		  </article>
 		<!-- modal 2 -->
-		<div class="modal fade" id="modalCafeEspecial" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<article class="modal fade" id="modalCafeEspecial" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 			  <div class="modal-content">
-				<div class="modal-header">
+				<header class="modal-header">
 				  <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Cafés Especiais</h2>
 				  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
+				</header>
+				<section class="modal-body">
 					<img class="w-100" src="./assets/produtos-cafe-especial.png" alt="Xícara de café preto">
 					<p>Somos conhecidos também por nossos cafés especiais, que são cuidadosamente preparados com grãos selecionados de alta qualidade e técnicas de preparo precisas.</p>
 					<p>Entre as opções de cafés especiais do Café & Bistrô Serenatto, destacamos o café aeropress, que é preparado com uma técnica de imersão e pressão, resultando em uma bebida de sabor intenso e aroma acentuado. Outra opção popular é o café Hario V60, que é preparado com um filtro de papel em formato de cone e resulta em uma bebida limpa e suave, ressaltando as notas sensoriais dos grãos. Além disso, oferecemos uma variedade de bebidas geladas, como o café gelado, que é preparado com grãos torrados escuros e servido com gelo e leite, resultando em uma bebida refrescante e saborosa.</p>
-				</div>
-				<div class="modal-footer mx-auto">
+				</section>
+				<footer class="modal-footer mx-auto">
 				  <button type="button" class="btn botao--padrao border-0" data-bs-dismiss="modal">Fechar Janela</button>
-				</div>
+				</footer>
 			  </div>
 			</div>
-		  </div>
+		  </article>
 
 
 		<script
