@@ -18,7 +18,7 @@ export const router = createBrowserRouter([
 						element: <SelecaoCliente />,
 					},
 					{
-						path: "cliente",
+						path: "interesses",
 						element: <h1>Interesses</h1>,
 					},
 					{
