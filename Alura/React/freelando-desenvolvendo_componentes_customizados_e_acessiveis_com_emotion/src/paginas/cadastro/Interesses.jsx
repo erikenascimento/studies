@@ -1,9 +1,10 @@
 import { Tipografia } from "../../componentes/Tipografia/Tipografia";
 import GrupoRadio from "../../componentes/Radio/GrupoRadio";
-import { useState } from "react";
 import { Col, Row } from "react-grid-system";
 import { Botao } from "../../componentes/Botao/Botao";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useCadastroUsuarioContext } from "../../contexto/CadastroUsuario";
+import { useEffect } from "react";
 
 const opcoes = [
 	{
@@ -12,7 +13,7 @@ const opcoes = [
 	},
 	{
 		valor: 2,
-		label: "Design e Multimidia",
+		label: "Design e Multimídia",
 	},
 	{
 		valor: 3,
@@ -33,21 +34,32 @@ const opcoes = [
 ];
 
 const Interesses = () => {
-	const [opcao, setOpcao] = useState("");
+	const { usuario, setInteresse, possoSelecionarInteresse } =
+		useCadastroUsuarioContext();
+
+	const navegar = useNavigate();
+
+	useEffect(() => {
+		if (!possoSelecionarInteresse()) {
+			navegar("/cadastro");
+		}
+	}, [navegar, possoSelecionarInteresse]);
 
 	return (
-		<div style={{ textAlign: "center" }}>
-			<Tipografia variante="h1" componente="h1">
-				Crie seu cadastro
-			</Tipografia>
-			<Tipografia variante="h3" componente="h2">
-				Qual a área de interesse?
-			</Tipografia>
+		<>
+			<div style={{ textAlign: "center" }}>
+				<Tipografia variante="h1" componente="h1">
+					Crie seu cadastro
+				</Tipografia>
+				<Tipografia variante="h3" componente="h2">
+					Qual a área de interesse?
+				</Tipografia>
+			</div>
 			<GrupoRadio
 				opcoes={opcoes}
-				valor={opcao}
-				onChange={setOpcao}
-			></GrupoRadio>
+				valor={usuario.interesse}
+				onChange={setInteresse}
+			/>
 			<Row>
 				<Col lg={6} md={6} sm={6}>
 					<Link to="/cadastro">
@@ -62,7 +74,7 @@ const Interesses = () => {
 					</div>
 				</Col>
 			</Row>
-		</div>
+		</>
 	);
 };
 
