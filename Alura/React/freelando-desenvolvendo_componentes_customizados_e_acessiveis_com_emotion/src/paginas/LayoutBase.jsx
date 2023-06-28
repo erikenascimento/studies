@@ -36,7 +36,7 @@ const LayoutBase = () => {
 						<Col>
 							<FreelandoLogo height={40} width={176} />
 							<Tipografia variante="legenda" componente="legenda">
-								Desenvolvido por Alura. Projeto fictício sem fins comerciais.
+								Desenvolvido por Erike | Projeto fictício sem fins comerciais.
 							</Tipografia>
 						</Col>
 						<Col style={{ textAlign: "right" }}>
