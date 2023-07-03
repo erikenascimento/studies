@@ -1,18 +1,21 @@
 import { Negociacao } from "../models/negociacao.js";
 import { Negociacoes } from "../models/negociacoes.js";
+import { NegociacoesView } from "../views/negociacoes-views.js";
 export class NegociacaoController {
     constructor() {
         // private negociacoes: Negociacoes = new Negociacoes
         // ao atribuir, o typescript infere o tipo, dessa forma a sintaxe abaixo é a mesma da comentada acima porém mais enxuta
-        this.negociacoes = new Negociacoes;
+        this.negociacoes = new Negociacoes();
+        this.negociacoesView = new NegociacoesView('#negociacoesView');
         this.inputData = document.querySelector('#data');
         this.inputQuantidade = document.querySelector('#quantidade');
         this.inputValor = document.querySelector('#valor');
+        this.negociacoesView.update(this.negociacoes);
     }
     adiciona() {
         const negociacao = this.criaNegociacao();
         this.negociacoes.adiciona(negociacao);
-        console.log("negociacao:", this.negociacoes.lista());
+        this.negociacoesView.update(this.negociacoes);
         this.limparFormulario();
     }
     criaNegociacao() {
