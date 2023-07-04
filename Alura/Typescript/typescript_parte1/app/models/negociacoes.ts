@@ -5,13 +5,13 @@ export class Negociacoes {
     // abaixo temos um "açucar sintático" da opção acima
     private negociacoes: Negociacao[] = [];
 
-    adiciona(negociacao: Negociacao) {
+    public adiciona(negociacao: Negociacao) {
         this.negociacoes.push(negociacao)
     }
 
     // lista(): ReadonlyArray<Negociacao> {
     // outro "açucar"
-    lista(): readonly Negociacao[] {
+    public lista(): readonly Negociacao[] {
         return [...this.negociacoes]
     }
 }
