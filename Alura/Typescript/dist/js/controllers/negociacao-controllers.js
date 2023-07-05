@@ -5,8 +5,6 @@ import { MensagemView } from "../views/mensagem-view.js";
 import { NegociacoesView } from "../views/negociacoes-view.js";
 export class NegociacaoController {
     constructor() {
-        // private negociacoes: Negociacoes = new Negociacoes
-        // ao atribuir, o typescript infere o tipo, dessa forma a sintaxe abaixo é a mesma da comentada acima porém mais enxuta
         this.negociacoes = new Negociacoes();
         this.negociacoesView = new NegociacoesView('#negociacoesView', true);
         this.mensagemView = new MensagemView('#mensagemView');

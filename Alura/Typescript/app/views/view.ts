@@ -3,7 +3,7 @@ export abstract class View<T> {
     private escapar = false
 
     constructor(seletor: string, escapar?: boolean) {
-        this.elemento = document.querySelector(seletor)
+        this.elemento = document.querySelector(seletor) as HTMLInputElement
         // como a variavel é iniciada como false, é preciso fazer a condicional abaixo para atribuir o valor true quando esse vier pelo método.
         if (escapar) {
             this.escapar = escapar
