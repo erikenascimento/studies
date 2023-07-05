@@ -12,7 +12,7 @@ export class NegociacaoController {
     // ao atribuir, o typescript infere o tipo, dessa forma a sintaxe abaixo é a mesma da comentada acima porém mais enxuta
     private negociacoes = new Negociacoes()
     private negociacoesView = new NegociacoesView('#negociacoesView', true)
-    private mensagemView = new MensagemView('#mensagemView', false)
+    private mensagemView = new MensagemView('#mensagemView')
 
     constructor() {
         this.inputData = document.querySelector('#data')
