@@ -6,7 +6,7 @@ export class Negociacao implements Imprimivel {
         public readonly quantidade: number, 
         public readonly valor: number
     ) {
-        
+
     }
 
     public static criaDe(dataString: string, quantidadeString: string, valorString: string): Negociacao {
@@ -32,5 +32,11 @@ export class Negociacao implements Imprimivel {
             Quantidade: ${this.quantidade},
             Valor: ${this.valor}
         `
+    }
+
+    public serIgual(negociacao: Negociacao): boolean {
+        return this.data.getDate() === negociacao.data.getDate() &&
+        this.data.getMonth() === negociacao.data.getMonth() &&
+        this.data.getFullYear() === negociacao.data.getFullYear();
     }
 }
