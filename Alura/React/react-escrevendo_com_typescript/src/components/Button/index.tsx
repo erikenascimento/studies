@@ -1,6 +1,6 @@
 import React from "react";
-import "./style.scss";
+import style from "./Button.module.scss";
 
 export default function Button() {
-	return <button className="button">Button</button>;
+	return <button className={style.button}>Button</button>;
 }
