@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Cronometro from "../components/Cronometro";
 import Formulario from "../components/Formulario";
 import Lista from "../components/Lista";
@@ -22,7 +22,7 @@ function App() {
 		<div className={style.AppStyle}>
 			<Formulario setTarefas={setTarefas} />
 			<Lista tarefas={tarefas} selecionaTarefa={selecionaTarefa} />
-			<Cronometro />
+			<Cronometro selecionado={selecionado} />
 		</div>
 	);
 }
