@@ -3,6 +3,6 @@ describe("Página de login", () => {
     cy.visit("http://localhost:4200/#/home");
   });
   it("Preencher os campos do formulário corretamente para efetuar login", () => {
-    cy.login("catarinap", "catarina123");
+    cy.login("gamora", "zenwhoberi");
   });
 });
