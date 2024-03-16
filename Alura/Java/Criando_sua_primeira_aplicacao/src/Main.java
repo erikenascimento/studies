@@ -10,5 +10,15 @@ public class Main {
 
         boolean incluidoNoPlano = true;
         double notaDoFilme = 8.0;
+// isso é um comentário
+        double media = (9.8 + 6.3 + 8.0) / 3;
+        System.out.println(media);
+        String sinopse = """
+                Top Gun
+                Filme de aventura com galã dos anos 80
+                Muito bom!
+                Ano de lançamento: 
+                """ + anoDeLancamento;
+        System.out.println(sinopse);
     }
 }
