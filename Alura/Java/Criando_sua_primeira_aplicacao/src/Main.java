@@ -2,8 +2,13 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.println("Olá Mundo!");
+        System.out.println("Esse é o Screen Match");
+        System.out.println("Top Gun: Maverick");
+
+        int anoDeLancamento = 2022;
+        System.out.println("Ano de lançamento: " + anoDeLancamento);
+
+        boolean incluidoNoPlano = true;
+        double notaDoFilme = 8.0;
     }
 }
