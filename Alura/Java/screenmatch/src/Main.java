@@ -63,5 +63,6 @@ public class Main {
         listaDeFilmes.add(filmeAvatar);
         System.out.println("\nTamanho da lista: " + listaDeFilmes.size());
         System.out.println("Primeiro filme: " + listaDeFilmes.get(0).getNome());
+        System.out.println("lista de filmes: " + listaDeFilmes);
     }
 }
