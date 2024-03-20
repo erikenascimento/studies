@@ -1,5 +1,7 @@
-import br.com.alra.screenmatch.calculos.CalculadoraDeTempo;
-import br.com.alra.screenmatch.calculos.FiltroRecomendacao;
+package br.com.alura.screenmatch.main;
+
+import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
+import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
 import br.com.alura.screenmatch.modelos.Episodio;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
@@ -8,8 +10,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Filme filmePoderosoChefao = new Filme("O Poderoso Chefão");
-        filmePoderosoChefao.setAnoDeLancamento(1970);
+        Filme filmePoderosoChefao = new Filme("O Poderoso Chefão", 1970);
         filmePoderosoChefao.setDuracaoEmMinutos(180);
         System.out.println("\n");
         filmePoderosoChefao.exibeFichaTecnica();
@@ -21,9 +22,7 @@ public class Main {
         System.out.println("Total de avaliações: " + filmePoderosoChefao.getTotalDeAvaliacoes());
         System.out.println("Média de avaliações: " + filmePoderosoChefao.pegaMedia());
 
-        Serie lost = new Serie();
-        lost.setNome("Lost");
-        lost.setAnoDeLancamento(2000);
+        Serie lost = new Serie("Lost", 2000);
         System.out.println("\n");
         lost.exibeFichaTecnica();
         lost.setTemporadas(10);
@@ -31,8 +30,7 @@ public class Main {
         lost.setMinutosPorEpisodio(50);
         System.out.println("Duração para maratonar: " + lost.getDuracaoEmMinutos());
 
-        Filme filmeAvatar = new Filme("Avatar");
-        filmeAvatar.setAnoDeLancamento(2023);
+        Filme filmeAvatar = new Filme("Avatar", 2023);
         filmeAvatar.setDuracaoEmMinutos(200);
 
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
@@ -49,9 +47,8 @@ public class Main {
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
 
-        Filme filmeDogville = new Filme("Dogville");
+        Filme filmeDogville = new Filme("Dogville", 2023);
         filmeDogville.setDuracaoEmMinutos(200);
-        filmeDogville.setAnoDeLancamento(2003);
         filmeDogville.avalia(10);
 
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();
