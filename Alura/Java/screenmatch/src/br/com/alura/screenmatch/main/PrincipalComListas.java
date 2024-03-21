@@ -5,6 +5,7 @@ import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -30,5 +31,8 @@ public class PrincipalComListas {
                 System.out.println("Classificação: " + filme.getClassificacao() +"\n");
             }
         }
+
+        Collections.sort(listaDeTitulos);
+        System.out.println("Lista de títulos ordenados:\n" + listaDeTitulos);
     }
 }
