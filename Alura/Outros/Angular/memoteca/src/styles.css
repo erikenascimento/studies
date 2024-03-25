@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+main {
+  background: url(/assets/imagens/background-completo.png);
+  background-size: cover;
+  min-height: 60vh;
+}
