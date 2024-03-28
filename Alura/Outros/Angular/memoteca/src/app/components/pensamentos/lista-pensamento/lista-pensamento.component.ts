@@ -19,6 +19,12 @@ export class ListaPensamentoComponent implements OnInit {
       autoria: 'Julius',
       modelo: 'modelo2',
     },
+    {
+      conteudo:
+        'Consequat consectetur veniam velit quis proident laborum. Amet cillum velit reprehenderit commodo ullamco. Ea ullamco irure dolore dolore excepteur ad tempor nostrud cillum cupidatat esse laboris Lorem. Magna eiusmod est eu veniam cillum consequat. Consectetur do voluptate reprehenderit ullamco et ad id labore ad.',
+      autoria: 'Brutus',
+      modelo: 'modelo2',
+    },
   ];
 
   constructor() {}
