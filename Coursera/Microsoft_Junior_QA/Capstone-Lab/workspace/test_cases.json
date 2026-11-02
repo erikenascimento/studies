@@ -1,0 +1,35 @@
+{
+  "project": "GreenLeaf Grocers",
+  "test_cases": [
+    {
+      "id": "TC-GL-01",
+      "linked_story": "TODO",
+      "title": "TODO",
+      "preconditions": "TODO",
+      "steps": [
+        "TODO"
+      ],
+      "expected_result": "TODO"
+    },
+    {
+      "id": "TC-GL-02",
+      "linked_story": "TODO",
+      "title": "TODO",
+      "preconditions": "TODO",
+      "steps": [
+        "TODO"
+      ],
+      "expected_result": "TODO"
+    },
+    {
+      "id": "TC-GL-03",
+      "linked_story": "TODO",
+      "title": "TODO",
+      "preconditions": "TODO",
+      "steps": [
+        "TODO"
+      ],
+      "expected_result": "TODO"
+    }
+  ]
+}
