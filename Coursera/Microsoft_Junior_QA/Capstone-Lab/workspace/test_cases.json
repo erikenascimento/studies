@@ -3,33 +3,49 @@
   "test_cases": [
     {
       "id": "TC-GL-01",
-      "linked_story": "TODO",
-      "title": "TODO",
-      "preconditions": "TODO",
+      "linked_story": "GL-101",
+      "title": "Checkout purchase without using an account",
+      "preconditions": "None",
       "steps": [
-        "TODO"
+        "Add any product to cart",
+        "Click on the cart icon",
+        "Click on the checkout button",
+        "Click on the 'Place Order' button",
+        "Verify that the order is placed successfully"
       ],
-      "expected_result": "TODO"
+      "expected_result": "The order is placed successfully without requiring a user account."
     },
     {
       "id": "TC-GL-02",
-      "linked_story": "TODO",
-      "title": "TODO",
-      "preconditions": "TODO",
-      "steps": [
-        "TODO"
+      "linked_story": "GL-102",
+      "title": "Apply a promotional code at checkout",
+      "preconditions": [ 
+        "Add any product to cart", 
+        "Click on the cart icon",
+        "Click on the checkout button" 
       ],
-      "expected_result": "TODO"
+      "steps": [
+        "Enter a valid promotional code in the designated field",
+        "Click on the 'Place Order' button",
+        "Verify that the discount is applied to the order total"
+      ],
+      "expected_result": "The discount is applied to the order total when a valid promotional code is entered."
     },
     {
       "id": "TC-GL-03",
-      "linked_story": "TODO",
-      "title": "TODO",
-      "preconditions": "TODO",
-      "steps": [
-        "TODO"
+      "linked_story": "GL-103",
+      "title": "Checkout form guides the user correct missing/wrong information",
+      "preconditions": [ 
+        "Add any product to cart", 
+        "Click on the cart icon",
+        "Click on the checkout button" 
       ],
-      "expected_result": "TODO"
+      "steps": [
+        "Fill the required fields in the checkout form with incorrect or missing information",
+        "Click on the 'Place Order' button",
+        "Verify that the form highlights the incorrect or missing fields and provides guidance to correct them"
+      ],
+      "expected_result": "The form highlights the incorrect or missing fields and provides guidance to correct them."
     }
   ]
 }
