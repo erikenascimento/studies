@@ -1,5 +1,5 @@
 # studies
-This repository is where I'll commit my codes that I create while learning or practicing a new tool
+This repository is where I'll commit my codes that I create while learning or practicing a new tool. In the future I will turn this repository private like I did with the other 14 repositores. I'll just transfer all of those 14 repositories into here before that, but that is low priority for now.
 
 What are the folders about:
 
